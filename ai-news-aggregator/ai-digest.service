@@ -1,0 +1,13 @@
+[Unit]
+Description=AI Daily News Digest
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=user
+WorkingDirectory=/home/user/AI-Projects/ai-news-aggregator
+EnvironmentFile=/home/user/AI-Projects/ai-news-aggregator/.env
+ExecStart=/home/user/AI-Projects/ai-news-aggregator/venv/bin/python3 /home/user/AI-Projects/ai-news-aggregator/main.py
+StandardOutput=journal
+StandardError=journal
