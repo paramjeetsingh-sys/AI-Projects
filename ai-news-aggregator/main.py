@@ -11,6 +11,7 @@ from datetime import datetime
 from news_fetcher import fetch_all_news
 from summarizer import summarize_news
 from email_sender import send_digest_email
+from sheets_writer import write_digest_to_sheet
 
 
 def main():
@@ -36,13 +37,16 @@ def main():
     # Step 2: Summarize with Claude
     digest = summarize_news(articles)
 
-    # Step 3: Optionally save digest
+    # Step 3: Write to Google Sheets
+    write_digest_to_sheet(digest)
+
+    # Step 4: Optionally save digest to file
     if args.save_digest:
         with open(args.save_digest, "w") as f:
             json.dump(digest, f, indent=2)
         print(f"Digest saved to {args.save_digest}")
 
-    # Step 4: Send email
+    # Step 5: Send email
     if args.dry_run:
         print("\n[DRY RUN] Email not sent. Digest summary:")
         print(f"  Date: {digest.get('date')}")
