@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Dry run (no email sent)'
+        description: 'Dry run (no file written)'
         required: false
         default: 'false'
         type: boolean
@@ -18,12 +18,12 @@ on:
         type: string
 
 jobs:
-  send-ai-digest:
-    name: Fetch & Email AI News Digest
+  ai-digest:
+    name: Fetch & Store AI News Digest
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
-      contents: write   # needed to commit the daily digest file back to the repo
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -43,13 +43,6 @@ jobs:
         working-directory: ai-news-aggregator
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
-          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-          SMTP_HOST: ${{ secrets.SMTP_HOST }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          SMTP_USER: ${{ secrets.SMTP_USER }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          RECIPIENT_EMAIL: paramjeet.singh@classplus.co
         run: |
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
@@ -71,11 +64,3 @@ jobs:
             git commit -m "digest: $(date -u +%Y-%m-%d)"
             git push
           fi
-
-      - name: Upload digest artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ai-digest-${{ github.run_id }}
-          path: digests/
-          retention-days: 30
