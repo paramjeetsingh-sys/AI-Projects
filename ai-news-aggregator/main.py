@@ -4,7 +4,6 @@ AI News Aggregator — Daily Digest
 Fetches AI news, summarizes with Claude, and emails a beautiful digest.
 """
 import sys
-import json
 import argparse
 from datetime import datetime
 
@@ -12,14 +11,13 @@ from news_fetcher import fetch_all_news
 from summarizer import summarize_news
 from email_sender import send_digest_email
 from sheets_writer import write_digest_to_sheet
+from digest_store import save_daily_digest, cleanup_old_digests
 
 
 def main():
     parser = argparse.ArgumentParser(description="AI Daily News Digest")
     parser.add_argument("--dry-run", action="store_true",
                         help="Fetch and summarize but do not send email")
-    parser.add_argument("--save-digest", metavar="FILE",
-                        help="Save the digest JSON to a file")
     parser.add_argument("--lookback-hours", type=int, default=24,
                         help="How many hours back to fetch news (default: 24)")
     args = parser.parse_args()
@@ -37,14 +35,14 @@ def main():
     # Step 2: Summarize with Claude
     digest = summarize_news(articles)
 
-    # Step 3: Write to Google Sheets
-    write_digest_to_sheet(digest)
+    # Step 3: Save today's digest file and prune files older than 7 days
+    save_daily_digest(digest)
+    removed = cleanup_old_digests(keep_days=7)
+    if removed:
+        print(f"Pruned {len(removed)} old digest(s): {', '.join(removed)}")
 
-    # Step 4: Optionally save digest to file
-    if args.save_digest:
-        with open(args.save_digest, "w") as f:
-            json.dump(digest, f, indent=2)
-        print(f"Digest saved to {args.save_digest}")
+    # Step 4: Write to Google Sheets (optional — needs GOOGLE_CREDENTIALS + GOOGLE_SHEET_ID)
+    write_digest_to_sheet(digest)
 
     # Step 5: Send email
     if args.dry_run:
