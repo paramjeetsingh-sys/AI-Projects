@@ -1,3 +1,4 @@
+import re
 import anthropic
 import json
 from typing import List, Dict
@@ -57,7 +58,7 @@ def summarize_news(articles: List[Dict]) -> Dict:
 
     response = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=4096,
+        max_tokens=8192,
         system=[
             {
                 "type": "text",
@@ -79,12 +80,12 @@ def summarize_news(articles: List[Dict]) -> Dict:
     )
 
     raw = response.content[0].text.strip()
-    # Strip markdown code fences if present
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-    raw = raw.strip()
+    # Strip markdown code fences if the model wrapped the JSON despite instructions
+    match = re.search(r"```(?:json)?\s*([\s\S]+?)\s*```", raw)
+    if match:
+        raw = match.group(1).strip()
+    else:
+        raw = raw.strip()
 
     try:
         digest = json.loads(raw)

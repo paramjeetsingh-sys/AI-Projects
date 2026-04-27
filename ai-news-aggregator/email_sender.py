@@ -10,10 +10,11 @@ from email_template import build_html_email, build_plain_text_email
 
 
 def send_digest_email(digest: Dict) -> bool:
-    smtp_host = os.environ.get("SMTP_HOST", "smtp.gmail.com")
-    smtp_port = int(os.environ.get("SMTP_PORT", "587"))
-    smtp_user = os.environ.get("SMTP_USER", "")
-    smtp_password = os.environ.get("SMTP_PASSWORD", "")
+    # Use `or` so that an empty-string env var (e.g. unset GitHub secret) falls back to the default
+    smtp_host = os.environ.get("SMTP_HOST") or "smtp.gmail.com"
+    smtp_port = int(os.environ.get("SMTP_PORT") or "587")
+    smtp_user = os.environ.get("SMTP_USER") or ""
+    smtp_password = os.environ.get("SMTP_PASSWORD") or ""
     recipient = os.environ.get("RECIPIENT_EMAIL", "paramjeet.singh@classplus.co")
 
     if not smtp_user or not smtp_password:

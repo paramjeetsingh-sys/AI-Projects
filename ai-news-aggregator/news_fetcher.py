@@ -1,3 +1,4 @@
+import re
 import feedparser
 import requests
 from datetime import datetime, timezone, timedelta
@@ -64,9 +65,8 @@ def fetch_feed(feed_info: Dict, cutoff: datetime) -> List[Dict]:
                 continue
 
             title = getattr(entry, "title", "").strip()
-            summary = getattr(entry, "summary", "") or getattr(entry, "description", "")
-            # Strip HTML tags from summary
-            import re
+            summary = getattr(entry, "summary", "") or getattr(entry, "description", "") or ""
+            summary = str(summary)  # feedparser attributes can be None on malformed feeds
             summary = re.sub(r"<[^>]+>", " ", summary).strip()
             summary = re.sub(r"\s+", " ", summary)[:600]
 
