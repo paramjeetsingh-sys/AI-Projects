@@ -7,6 +7,9 @@ import sys
 import argparse
 from datetime import datetime
 
+from dotenv import load_dotenv
+load_dotenv()  # loads GROQ_API_KEY (and any other vars) from .env when running locally
+
 from news_fetcher import fetch_all_news
 from summarizer import summarize_news
 from digest_store import save_daily_digest, cleanup_old_digests
