@@ -134,7 +134,7 @@ def build_html(digest: Dict) -> str:
   <div class="tldr">{tldr}</div>
   {top_html}
   {sections_html}
-  <div class="footer">AI Daily Digest · Powered by Claude + Groq · Unsubscribe by removing the cron job.</div>
+  <div class="footer">AI Daily Digest · Powered by Groq (Llama 3.3 70B) · Unsubscribe by removing the cron job.</div>
 </div>
 </body>
 </html>"""
