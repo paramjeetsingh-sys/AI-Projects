@@ -1,24 +1,21 @@
 #!/usr/bin/env python3
 """
 AI News Aggregator — Daily Digest
-Fetches AI news, summarizes with Claude, and emails a beautiful digest.
+Fetches AI news, summarizes with Claude, and saves a daily JSON digest to the repo.
 """
 import sys
-import json
 import argparse
 from datetime import datetime
 
 from news_fetcher import fetch_all_news
 from summarizer import summarize_news
-from email_sender import send_digest_email
+from digest_store import save_daily_digest, cleanup_old_digests
 
 
 def main():
     parser = argparse.ArgumentParser(description="AI Daily News Digest")
     parser.add_argument("--dry-run", action="store_true",
-                        help="Fetch and summarize but do not send email")
-    parser.add_argument("--save-digest", metavar="FILE",
-                        help="Save the digest JSON to a file")
+                        help="Fetch and summarize but do not write the digest file")
     parser.add_argument("--lookback-hours", type=int, default=24,
                         help="How many hours back to fetch news (default: 24)")
     args = parser.parse_args()
@@ -36,15 +33,8 @@ def main():
     # Step 2: Summarize with Claude
     digest = summarize_news(articles)
 
-    # Step 3: Optionally save digest
-    if args.save_digest:
-        with open(args.save_digest, "w") as f:
-            json.dump(digest, f, indent=2)
-        print(f"Digest saved to {args.save_digest}")
-
-    # Step 4: Send email
     if args.dry_run:
-        print("\n[DRY RUN] Email not sent. Digest summary:")
+        print("\n[DRY RUN] Digest not written. Summary:")
         print(f"  Date: {digest.get('date')}")
         print(f"  Total articles: {digest.get('total_articles')}")
         print(f"  Headline: {digest.get('headline')}")
@@ -56,11 +46,11 @@ def main():
         print("\nDry run complete.")
         return
 
-    try:
-        send_digest_email(digest)
-    except Exception as e:
-        print(f"[ERROR] Failed to send email: {e}")
-        sys.exit(1)
+    # Step 3: Save today's file and prune files older than 7 days
+    save_daily_digest(digest)
+    removed = cleanup_old_digests(keep_days=7)
+    if removed:
+        print(f"Pruned {len(removed)} old digest(s): {', '.join(removed)}")
 
     print("\nAI Daily Digest complete!")
 

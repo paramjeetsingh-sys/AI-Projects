@@ -1,9 +1,12 @@
-import anthropic
 import json
 from typing import List, Dict
 from datetime import datetime
 
-client = anthropic.Anthropic()
+from groq import Groq
+
+client = Groq()  # reads GROQ_API_KEY from environment
+
+MODEL = "llama-3.3-70b-versatile"
 
 SYSTEM_PROMPT = """You are an expert AI journalist and curator. Your job is to analyze a list of AI news articles and create a structured daily digest.
 
@@ -53,19 +56,15 @@ def summarize_news(articles: List[Dict]) -> Dict:
     today = datetime.now().strftime("%Y-%m-%d")
     articles_text = build_articles_text(articles[:80])  # cap at 80 articles
 
-    print(f"Summarizing {min(len(articles), 80)} articles with Claude...")
+    print(f"Summarizing {min(len(articles), 80)} articles with {MODEL} via Groq...")
 
-    response = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=4096,
-        system=[
-            {
-                "type": "text",
-                "text": SYSTEM_PROMPT,
-                "cache_control": {"type": "ephemeral"},  # cache system prompt
-            }
-        ],
+    response = client.chat.completions.create(
+        model=MODEL,
+        max_tokens=8192,
+        temperature=0.3,
+        response_format={"type": "json_object"},  # guarantees valid JSON output
         messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
             {
                 "role": "user",
                 "content": (
@@ -74,18 +73,11 @@ def summarize_news(articles: List[Dict]) -> Dict:
                     "Create a comprehensive daily AI digest from these articles. "
                     "Return ONLY valid JSON, no markdown code blocks."
                 ),
-            }
+            },
         ],
     )
 
-    raw = response.content[0].text.strip()
-    # Strip markdown code fences if present
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-    raw = raw.strip()
-
+    raw = response.choices[0].message.content
     try:
         digest = json.loads(raw)
         digest["total_articles"] = len(articles)
@@ -103,7 +95,7 @@ def _empty_digest() -> Dict:
         "tldr": "No articles were fetched today. Check your network or RSS feed sources.",
         "categories": {
             "new_models": [], "research": [], "features_updates": [],
-            "industry_business": [], "policy_society": []
+            "industry_business": [], "policy_society": [],
         },
         "top_story": None,
     }
@@ -112,9 +104,10 @@ def _empty_digest() -> Dict:
 def _fallback_digest(articles: List[Dict], today: str) -> Dict:
     cats = {"new_models": [], "research": [], "features_updates": [], "industry_business": [], "policy_society": []}
     for a in articles[:20]:
-        item = {"title": a["title"], "source": a["source"], "link": a["link"],
-                "summary": a["summary"][:200], "why_it_matters": ""}
-        cats["features_updates"].append(item)
+        cats["features_updates"].append({
+            "title": a["title"], "source": a["source"], "link": a["link"],
+            "summary": a["summary"][:200], "why_it_matters": "",
+        })
     return {
         "date": today,
         "total_articles": len(articles),

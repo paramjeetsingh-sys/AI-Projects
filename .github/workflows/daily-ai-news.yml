@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Dry run (no email sent)'
+        description: 'Dry run (no file written)'
         required: false
         default: 'false'
         type: boolean
@@ -18,10 +18,12 @@ on:
         type: string
 
 jobs:
-  send-ai-digest:
-    name: Fetch & Email AI News Digest
+  ai-digest:
+    name: Fetch & Store AI News Digest
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -40,12 +42,7 @@ jobs:
       - name: Run AI News Digest
         working-directory: ai-news-aggregator
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SMTP_HOST: ${{ secrets.SMTP_HOST }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          SMTP_USER: ${{ secrets.SMTP_USER }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          RECIPIENT_EMAIL: paramjeet.singh@classplus.co
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
@@ -54,12 +51,16 @@ jobs:
           if [ -n "${{ github.event.inputs.lookback_hours }}" ]; then
             ARGS="$ARGS --lookback-hours ${{ github.event.inputs.lookback_hours }}"
           fi
-          python main.py $ARGS --save-digest /tmp/digest.json
+          python main.py $ARGS
 
-      - name: Upload digest artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ai-digest-${{ github.run_id }}
-          path: /tmp/digest.json
-          retention-days: 30
+      - name: Commit daily digest to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add digests/
+          if git diff --staged --quiet; then
+            echo "No digest changes to commit (dry-run or already up to date)."
+          else
+            git commit -m "digest: $(date -u +%Y-%m-%d)"
+            git push
+          fi
