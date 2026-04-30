@@ -1,19 +1,32 @@
 #!/usr/bin/env python3
 """
 AI News Aggregator — Daily Digest
-Fetches AI news, summarizes with Claude, and saves a daily JSON digest to the repo.
+Fetches AI news, summarizes with Groq, and saves a daily JSON digest to the repo.
 """
 import sys
+import os
 import argparse
 from datetime import datetime
 from pathlib import Path
 
-# Load .env if present (optional; no error if file is missing)
-try:
-    from dotenv import load_dotenv
-    load_dotenv(Path(__file__).parent / ".env", override=False)
-except ImportError:
-    pass
+
+def _load_dotenv(path: Path) -> None:
+    """Minimal .env loader — no external deps required."""
+    if not path.exists():
+        return
+    with open(path) as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, value = line.partition("=")
+            key = key.strip()
+            value = value.strip().strip('"').strip("'")
+            if key and key not in os.environ:
+                os.environ[key] = value
+
+
+_load_dotenv(Path(__file__).parent / ".env")
 
 from news_fetcher import fetch_all_news
 from summarizer import summarize_news
@@ -35,13 +48,11 @@ def main():
     print(f"  AI Daily Digest — {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
     print(f"{'='*60}\n")
 
-    # Step 1: Fetch news
     articles = fetch_all_news(lookback_hours=args.lookback_hours)
 
     if not articles:
         print("[WARN] No articles found. Check network or RSS feed URLs.")
 
-    # Step 2: Summarize with Claude
     digest = summarize_news(articles)
 
     if args.dry_run:
@@ -57,13 +68,11 @@ def main():
         print("\nDry run complete.")
         return
 
-    # Step 3: Save today's file and prune files older than 7 days
     save_daily_digest(digest)
     removed = cleanup_old_digests(keep_days=7)
     if removed:
         print(f"Pruned {len(removed)} old digest(s): {', '.join(removed)}")
 
-    # Step 4: Send email digest
     if not args.no_email:
         send_digest_email(digest)
 
