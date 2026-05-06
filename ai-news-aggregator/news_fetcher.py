@@ -1,9 +1,11 @@
 import re
-import feedparser
-import requests
+import time
 from datetime import datetime, timezone, timedelta
 from typing import List, Dict, Optional
-import time
+
+import requests
+import xmltodict
+from dateutil import parser as dateutil_parser
 
 RSS_FEEDS = [
     {"name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/"},
@@ -33,21 +35,108 @@ AI_KEYWORDS = [
     "ai research", "ai safety", "ai regulation", "agi", "robotics", "hugging face",
 ]
 
+AI_SPECIFIC_SOURCES = {
+    "OpenAI Blog", "Google DeepMind", "Hugging Face Blog", "NVIDIA Blog", "Microsoft AI Blog"
+}
+
 
 def is_ai_related(title: str, summary: str) -> bool:
     text = (title + " " + summary).lower()
     return any(kw in text for kw in AI_KEYWORDS)
 
 
-def parse_published_date(entry) -> Optional[datetime]:
-    for attr in ("published_parsed", "updated_parsed", "created_parsed"):
-        val = getattr(entry, attr, None)
+def _strip_ns(key: str) -> str:
+    """Remove XML namespace URI ({uri}local) and prefix (ns:local) from a key."""
+    if not isinstance(key, str):
+        return key
+    key = key.split("}")[-1]
+    if ":" in key and not key.startswith("@"):
+        key = key.split(":")[-1]
+    return key
+
+
+def _normalize(obj):
+    """Recursively strip namespace prefixes from all dict keys."""
+    if isinstance(obj, dict):
+        return {_strip_ns(k): _normalize(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_normalize(i) for i in obj]
+    return obj
+
+
+def _parse_date(val) -> Optional[datetime]:
+    if not val:
+        return None
+    try:
+        dt = dateutil_parser.parse(str(val))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except Exception:
+        return None
+
+
+def _get_text(val) -> str:
+    if isinstance(val, dict):
+        return val.get("#text") or ""
+    return str(val) if val is not None else ""
+
+
+def _get_link(val) -> str:
+    if isinstance(val, str):
+        return val
+    if isinstance(val, dict):
+        return val.get("@href") or val.get("#text") or ""
+    if isinstance(val, list):
+        for item in val:
+            if isinstance(item, dict) and item.get("@rel", "alternate") == "alternate":
+                return item.get("@href", "")
         if val:
-            try:
-                return datetime(*val[:6], tzinfo=timezone.utc)
-            except Exception:
-                pass
-    return None
+            return _get_link(val[0])
+    return ""
+
+
+def _ensure_list(val) -> list:
+    if val is None:
+        return []
+    if isinstance(val, list):
+        return val
+    return [val]
+
+
+def _parse_entry(entry: dict, source_name: str) -> Optional[Dict]:
+    if not isinstance(entry, dict):
+        return None
+
+    title = _get_text(entry.get("title", "")).strip()
+    link = _get_link(entry.get("link", "")).strip()
+
+    summary = ""
+    for key in ("summary", "description", "content", "encoded"):
+        v = entry.get(key)
+        if v:
+            summary = _get_text(v)
+            break
+
+    summary = re.sub(r"<[^>]+>", " ", summary).strip()
+    summary = re.sub(r"\s+", " ", summary)[:600]
+
+    pub_date = None
+    for key in ("pubDate", "published", "updated", "date"):
+        v = entry.get(key)
+        if v:
+            pub_date = _parse_date(_get_text(v) or v)
+            if pub_date:
+                break
+
+    return {
+        "source": source_name,
+        "title": title,
+        "summary": summary,
+        "link": link,
+        "published": pub_date.strftime("%Y-%m-%d %H:%M UTC") if pub_date else "Today",
+        "_pub_date": pub_date,
+    }
 
 
 def fetch_feed(feed_info: Dict, cutoff: datetime) -> List[Dict]:
@@ -55,38 +144,36 @@ def fetch_feed(feed_info: Dict, cutoff: datetime) -> List[Dict]:
     try:
         headers = {"User-Agent": "Mozilla/5.0 (compatible; AINewsBot/1.0)"}
         resp = requests.get(feed_info["url"], headers=headers, timeout=15)
-        feed = feedparser.parse(resp.content)
+        resp.raise_for_status()
 
-        for entry in feed.entries:
-            pub_date = parse_published_date(entry)
+        raw = xmltodict.parse(resp.content)
+        data = _normalize(raw)
 
-            # Include articles from today (or undated ones as fallback)
+        entries = []
+        if "rss" in data:
+            channel = data["rss"].get("channel", {}) or {}
+            entries = _ensure_list(channel.get("item"))
+        elif "feed" in data:
+            entries = _ensure_list(data["feed"].get("entry"))
+
+        for entry in entries:
+            parsed = _parse_entry(entry, feed_info["name"])
+            if not parsed:
+                continue
+
+            pub_date = parsed.pop("_pub_date", None)
             if pub_date and pub_date < cutoff:
                 continue
 
-            title = getattr(entry, "title", "").strip()
-            summary = getattr(entry, "summary", "") or getattr(entry, "description", "") or ""
-            summary = str(summary)  # feedparser attributes can be None on malformed feeds
-            summary = re.sub(r"<[^>]+>", " ", summary).strip()
-            summary = re.sub(r"\s+", " ", summary)[:600]
-
-            link = getattr(entry, "link", "")
-
-            if not title or not link:
+            if not parsed["title"] or not parsed["link"]:
                 continue
 
-            # For non-AI-specific feeds, filter by keyword
-            if feed_info["name"] not in ("OpenAI Blog", "Google DeepMind", "Hugging Face Blog", "NVIDIA Blog", "Microsoft AI Blog"):
-                if not is_ai_related(title, summary):
+            if feed_info["name"] not in AI_SPECIFIC_SOURCES:
+                if not is_ai_related(parsed["title"], parsed["summary"]):
                     continue
 
-            articles.append({
-                "source": feed_info["name"],
-                "title": title,
-                "summary": summary,
-                "link": link,
-                "published": pub_date.strftime("%Y-%m-%d %H:%M UTC") if pub_date else "Today",
-            })
+            articles.append(parsed)
+
     except Exception as e:
         print(f"  [WARN] Failed to fetch {feed_info['name']}: {e}")
 
@@ -102,10 +189,9 @@ def fetch_all_news(lookback_hours: int = 24) -> List[Dict]:
         print(f"  Fetching: {feed_info['name']}")
         articles = fetch_feed(feed_info, cutoff)
         all_articles.extend(articles)
-        time.sleep(0.3)  # polite delay
+        time.sleep(0.3)
 
-    # Deduplicate by title similarity
-    seen_titles = set()
+    seen_titles: set = set()
     unique_articles = []
     for a in all_articles:
         key = a["title"].lower()[:60]
