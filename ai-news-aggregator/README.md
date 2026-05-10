@@ -10,11 +10,12 @@ Go to your repo → Settings → Secrets and variables → Actions → New repos
 
 | Secret | Value |
 |--------|-------|
-| `ANTHROPIC_API_KEY` | Your Anthropic API key |
-| `SMTP_HOST` | `smtp.gmail.com` (for Gmail) |
-| `SMTP_PORT` | `587` |
-| `SMTP_USER` | Your sender Gmail address |
-| `SMTP_PASSWORD` | Gmail App Password (see below) |
+| `GROQ_API_KEY` | Your Groq API key (free at console.groq.com) |
+| `EMAIL_FROM` | Sender Gmail address (e.g. you@gmail.com) |
+| `EMAIL_PASSWORD` | Gmail App Password (see below) |
+| `EMAIL_TO` | Recipient address(es), comma-separated |
+| `SMTP_HOST` | `smtp.gmail.com` *(optional — this is the default)* |
+| `SMTP_PORT` | `587` *(optional — this is the default)* |
 
 ### 2. Gmail App Password
 
