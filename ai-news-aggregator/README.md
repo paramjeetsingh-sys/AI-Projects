@@ -10,11 +10,12 @@ Go to your repo → Settings → Secrets and variables → Actions → New repos
 
 | Secret | Value |
 |--------|-------|
-| `ANTHROPIC_API_KEY` | Your Anthropic API key |
-| `SMTP_HOST` | `smtp.gmail.com` (for Gmail) |
-| `SMTP_PORT` | `587` |
-| `SMTP_USER` | Your sender Gmail address |
-| `SMTP_PASSWORD` | Gmail App Password (see below) |
+| `GROQ_API_KEY` | Your Groq API key (free at console.groq.com) |
+| `EMAIL_FROM` | Sender Gmail address (e.g. `you@gmail.com`) |
+| `EMAIL_PASSWORD` | Gmail App Password (see below) |
+| `EMAIL_TO` | Recipient address(es), comma-separated |
+| `SMTP_HOST` | `smtp.gmail.com` *(optional — this is the default)* |
+| `SMTP_PORT` | `587` *(optional — this is the default)* |
 
 ### 2. Gmail App Password
 
@@ -34,14 +35,15 @@ To trigger manually: Actions → Daily AI News Digest → Run workflow
 ```bash
 pip install -r requirements.txt
 
-export ANTHROPIC_API_KEY=your_key
-export SMTP_USER=sender@gmail.com
-export SMTP_PASSWORD=your_app_password
+export GROQ_API_KEY=your_groq_key
+export EMAIL_FROM=sender@gmail.com
+export EMAIL_PASSWORD=your_app_password
+export EMAIL_TO=recipient@gmail.com
 
-# Dry run (no email)
+# Dry run (no email, no file written)
 python main.py --dry-run
 
-# Send email
+# Full run — saves digest file and sends email
 python main.py
 
 # Fetch last 48 hours
