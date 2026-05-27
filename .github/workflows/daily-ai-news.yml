@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Dry run (no file written)'
+        description: 'Dry run (no file written, no email sent)'
         required: false
         default: 'false'
         type: boolean
@@ -19,7 +19,7 @@ on:
 
 jobs:
   ai-digest:
-    name: Fetch & Store AI News Digest
+    name: Fetch, Summarize & Email AI News Digest
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
@@ -42,11 +42,20 @@ jobs:
       - name: Run AI News Digest
         working-directory: ai-news-aggregator
         env:
+          # ── Summarization ─────────────────────────────────────────────
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          # ── Email (Gmail SMTP) ─────────────────────────────────────────
+          # EMAIL_FROM     → Gmail address used to send (e.g. you@gmail.com)
+          # EMAIL_PASSWORD → Gmail App Password (not your login password!)
+          #                  Create one at: https://myaccount.google.com/apppasswords
+          # EMAIL_TO       → Recipient(s), comma-separated
+          EMAIL_FROM:     ${{ secrets.EMAIL_FROM }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_TO:       bishambarsingh333@gmail.com
         run: |
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            ARGS="$ARGS --dry-run"
+            ARGS="$ARGS --dry-run --no-email"
           fi
           if [ -n "${{ github.event.inputs.lookback_hours }}" ]; then
             ARGS="$ARGS --lookback-hours ${{ github.event.inputs.lookback_hours }}"
