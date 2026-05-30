@@ -16,6 +16,11 @@ on:
         required: false
         default: '24'
         type: string
+      no_email:
+        description: 'Skip email even if credentials are configured'
+        required: false
+        default: 'false'
+        type: boolean
 
 jobs:
   ai-digest:
@@ -43,6 +48,9 @@ jobs:
         working-directory: ai-news-aggregator
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
         run: |
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
@@ -50,6 +58,9 @@ jobs:
           fi
           if [ -n "${{ github.event.inputs.lookback_hours }}" ]; then
             ARGS="$ARGS --lookback-hours ${{ github.event.inputs.lookback_hours }}"
+          fi
+          if [ "${{ github.event.inputs.no_email }}" = "true" ]; then
+            ARGS="$ARGS --no-email"
           fi
           python main.py $ARGS
 
