@@ -1,0 +1,95 @@
+{
+  "date": "2026-06-02",
+  "total_articles": 22,
+  "headline": "Nvidia chases $200B CPU market with AI agent PCs, while Florida sues OpenAI over violent incidents linked to ChatGPT",
+  "tldr": "Today's AI news is dominated by Nvidia's push into the CPU market with AI-powered PCs, and a lawsuit against OpenAI by the state of Florida over violent incidents allegedly linked to ChatGPT. Additionally, Anthropic has filed to go public, and there are various updates on AI tools and research. The lawsuit against OpenAI highlights the growing concerns over AI safety and regulation. Meanwhile, the development of new AI models and tools continues to accelerate, with potential applications in industries such as healthcare and finance.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+        "summary": "JetBrains has introduced Mellum2, a 12B mixture-of-experts model, which is a significant development in the field of large language models.",
+        "why_it_matters": "This new model has the potential to improve the performance of AI systems in various applications, including natural language processing and computer vision."
+      },
+      {
+        "title": "Nvidia chases $200B CPU market with AI agent PCs from Microsoft, Dell, and HP",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/",
+        "summary": "Nvidia is partnering with Microsoft, Dell, and HP to bring AI-powered PCs to the market, which could potentially disrupt the traditional CPU market.",
+        "why_it_matters": "This development could lead to significant changes in the way computers are designed and used, with AI playing a central role in their functionality."
+      }
+    ],
+    "research": [
+      {
+        "title": "Why Vector Search Alone Isn't Enough: Hybrid Retrieval for RAG",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/articles/vector-search-hybrid-retrieval-rag/",
+        "summary": "This article discusses the limitations of vector search in RAG pipelines and proposes a hybrid approach that combines vector search with other methods.",
+        "why_it_matters": "This research has implications for the development of more effective information retrieval systems, which are critical in many AI applications."
+      },
+      {
+        "title": "RAG Is Not Machine Learning, and the ML Toolkit Solves the Wrong Problem",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/rag-is-not-machine-learning-and-the-ml-toolkit-solves-the-wrong-problem/",
+        "summary": "This article argues that RAG is not a machine learning problem and that the traditional ML toolkit is not suitable for solving it.",
+        "why_it_matters": "This perspective challenges the conventional wisdom in the field and could lead to new approaches to solving RAG problems."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Codex is becoming a productivity tool for everyone",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/codex-for-knowledge-work",
+        "summary": "OpenAI's Codex is being developed as a productivity tool that can assist with various tasks, including research, data analysis, and content creation.",
+        "why_it_matters": "This development could make AI-powered productivity tools more accessible to a wider range of users, potentially increasing their productivity and efficiency."
+      },
+      {
+        "title": "Claude Code Adds Dynamic Workflows for Parallel Agent Coordination",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/",
+        "summary": "Anthropic's Claude Code has added a new feature that allows for dynamic workflows and parallel agent coordination, which can handle complex software engineering tasks.",
+        "why_it_matters": "This update could make Claude Code more useful for large-scale software development projects, potentially improving the efficiency and quality of the development process."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Anthropic files to go public",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
+        "summary": "Anthropic, a leading AI company, has filed to go public, which could provide a significant boost to the company's growth and development.",
+        "why_it_matters": "This development could lead to increased investment in the AI industry and potentially accelerate the development of new AI technologies."
+      },
+      {
+        "title": "Moderna gets $50 million to develop mRNA Ebola vaccine against Bundibugyo",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/health/2026/06/moderna-gets-50-million-to-develop-mrna-ebola-vaccine-against-bundibugyo/",
+        "summary": "Moderna has received funding to develop an mRNA-based Ebola vaccine, which could potentially provide a more effective and efficient way to combat the disease.",
+        "why_it_matters": "This development could lead to the creation of more effective vaccines and potentially save lives in areas affected by the Ebola outbreak."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Florida sues OpenAI, Sam Altman, in first-of-its-kind lawsuit over violent incidents",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/",
+        "summary": "The state of Florida has filed a lawsuit against OpenAI and its CEO, Sam Altman, over violent incidents allegedly linked to the company's ChatGPT model.",
+        "why_it_matters": "This lawsuit highlights the growing concerns over AI safety and regulation, and could potentially lead to new laws and guidelines for the development and deployment of AI systems."
+      },
+      {
+        "title": "Our views on AI policy and political advocacy",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+        "summary": "OpenAI has published its views on AI policy and political advocacy, emphasizing the importance of transparency, safety, and responsible development of AI systems.",
+        "why_it_matters": "This statement provides insight into OpenAI's approach to AI policy and regulation, and could influence the development of AI governance frameworks."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Nvidia chases $200B CPU market with AI agent PCs from Microsoft, Dell, and HP",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/",
+    "summary": "Nvidia is partnering with Microsoft, Dell, and HP to bring AI-powered PCs to the market, which could potentially disrupt the traditional CPU market.",
+    "why_it_matters": "This development could lead to significant changes in the way computers are designed and used, with AI playing a central role in their functionality."
+  }
+}
