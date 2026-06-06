@@ -1,0 +1,88 @@
+{
+  "date": "2026-06-06",
+  "total_articles": 10,
+  "headline": "Google introduces Gemma 4 12B, a unified multimodal model, while SpaceX is rejected from the S&P 500",
+  "tldr": "Today in AI, Google unveiled Gemma 4 12B, a laptop-friendly multimodal model, and SpaceX was blocked from the S&P 500. Meanwhile, startups are shifting focus towards 'together tech' and in-person experiences. Researchers are also exploring new AI models and techniques, including fine-tuning for emotion recognition and automating LLM prompts.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Google Gemma 4 12B: Architecture, Benchmarks, Access, and Hands-on Guide for Developers",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/06/google-gemma-4-12b/",
+        "summary": "Google introduced Gemma 4 12B Unified, an open-source multimodal model designed to understand text, images, audio, and video within a single architecture.",
+        "why_it_matters": "This new model has the potential to revolutionize multimodal understanding and generation, enabling more efficient and effective AI applications."
+      },
+      {
+        "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+        "summary": "The Thousand Token Wood project demonstrates a multi-agent economy on a 3B model, showcasing the potential for complex simulations and interactions.",
+        "why_it_matters": "This project highlights the capabilities of large language models in simulating complex systems and economies, with potential applications in fields like finance and urban planning."
+      }
+    ],
+    "research": [
+      {
+        "title": "How to Fine-Tune an SLM for Emotion Recognition",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/how-to-fine-tune-an-slm-for-emotion-recognition/",
+        "summary": "This tutorial provides a step-by-step guide on fine-tuning a Mistral Small 3.1 model for emotion recognition in social media communication.",
+        "why_it_matters": "Emotion recognition is a crucial aspect of natural language processing, and fine-tuning models for specific tasks can significantly improve their performance and accuracy."
+      },
+      {
+        "title": "Automate Writing Your LLM Prompts",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/automate-writing-your-llm-prompts/",
+        "summary": "This article explores the use of DSPy to automatically create, evaluate, and optimize LLM prompts, streamlining the prompt engineering process.",
+        "why_it_matters": "Automating prompt engineering can save time and effort, enabling researchers and developers to focus on more complex tasks and improving the overall efficiency of LLM-based applications."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "How OpenAI Built a Secure Windows Sandbox for Codex Agents",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/06/codex-windows-sandbox-design/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "OpenAI details the design of a secure Windows sandbox for Codex agents, showcasing the use of SIDs, ACLs, restricted tokens, and dedicated sandbox accounts.",
+        "why_it_matters": "Secure sandboxing is essential for safe execution of autonomous coding tasks, and this design provides a valuable example for developers and researchers working with AI agents."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "The most interesting startups right now want to get you off your phone",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/video/the-most-interesting-startups-right-now-want-to-get-you-off-your-phone/",
+        "summary": "Startups like Board and Cyberdeck are focusing on in-person experiences and games, marking a shift towards 'together tech'",
+        "why_it_matters": "This trend indicates a growing interest in balancing technology use with real-world interactions, potentially leading to new business opportunities and social benefits."
+      },
+      {
+        "title": "The ‘together tech’ wave might be the most intriguing startup bet of 2026",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/podcast/the-together-tech-wave-might-be-the-most-intriguing-startup-bet-of-2026/",
+        "summary": "The 'together tech' wave is gaining momentum, with startups exploring new ways to bring people together through in-person experiences and social interactions.",
+        "why_it_matters": "This trend has the potential to create new markets and opportunities for startups, while also addressing concerns around social isolation and technology addiction."
+      },
+      {
+        "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
+        "summary": "SpaceX was rejected from the S&P 500 due to its unprofitable status, also affecting OpenAI and Anthropic.",
+        "why_it_matters": "This decision highlights the challenges faced by unprofitable companies, including those in the AI sector, in accessing major indexes and securing funding."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Presentation: Platform Teams Enabling AI - MCP/Multi-Agentic Tools Across Linkedin",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/presentations/ai-multi-agentic-tools/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "LinkedIn's Karthik Ramgopal and Prince Valluri discuss the potential of AI as a new execution model for large-scale engineering, highlighting the importance of platform abstractions and safe tooling.",
+        "why_it_matters": "As AI becomes increasingly integrated into various industries, it is essential to develop platform abstractions and safe tooling to ensure efficient and secure execution of AI-based tasks."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Google Gemma 4 12B: Architecture, Benchmarks, Access, and Hands-on Guide for Developers",
+    "source": "Analytics Vidhya",
+    "link": "https://www.analyticsvidhya.com/blog/2026/06/google-gemma-4-12b/",
+    "summary": "Google introduced Gemma 4 12B Unified, an open-source multimodal model designed to understand text, images, audio, and video within a single architecture.",
+    "why_it_matters": "This new model has the potential to revolutionize multimodal understanding and generation, enabling more efficient and effective AI applications."
+  }
+}
