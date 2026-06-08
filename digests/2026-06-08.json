@@ -1,0 +1,95 @@
+{
+  "date": "2026-06-08",
+  "total_articles": 10,
+  "headline": "Microsoft announces general availability of Microsoft Discovery on Azure, powering the development of Majorana 2 Quantum Chip",
+  "tldr": "Today's AI news is dominated by major announcements from tech giants, including Microsoft's general availability of Microsoft Discovery, OpenAI's work on a 'super app', and NVIDIA's collaborations with LG Group and Doosan Group to advance physical AI and AI infrastructure. Additionally, Notion restored access to Anthropic after a service disruption, and experts discussed the evolving threat of AI-driven phishing and the need for technological sovereignty. These developments highlight the rapid progress and increasing importance of AI in various industries and aspects of life.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Microsoft Discovery Reaches GA on Azure",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/06/microsoft-discovery-majorana-2/",
+        "summary": "Microsoft announced the general availability of Microsoft Discovery, its Azure-based platform for deploying autonomous AI agent teams in scientific R&D, powering the development of Majorana 2 Quantum Chip",
+        "why_it_matters": "This development showcases Microsoft's commitment to advancing AI research and its potential to drive breakthroughs in fields like quantum computing"
+      },
+      {
+        "title": "NVIDIA and LG Group Build an AI Factory",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory/",
+        "summary": "NVIDIA and LG Group are building an AI factory to accelerate LG Group's next wave of AI-driven businesses, spanning robotics, autonomous driving, and data center technologies",
+        "why_it_matters": "This collaboration demonstrates the growing importance of AI in various industries and the need for specialized infrastructure to support its development and deployment"
+      },
+      {
+        "title": "NVIDIA and Doosan Group Collaborate to Advance Physical AI",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai/",
+        "summary": "NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics, and AI factory infrastructure",
+        "why_it_matters": "This partnership highlights the increasing focus on physical AI and its potential to transform industries like manufacturing and logistics"
+      }
+    ],
+    "research": [
+      {
+        "title": "Artificial Intelligence-Driven Phishing",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/articles/artificial-intelligence-driven-phishing/",
+        "summary": "The article examines how AI is transforming phishing from a manual, targeted activity into an automated and scalable attack model",
+        "why_it_matters": "This research highlights the evolving threat of AI-driven phishing and the need for organizations to develop effective countermeasures to protect themselves and their customers"
+      },
+      {
+        "title": "Mitigating Geopolitical Risks with Local-First Software and atproto",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/presentations/cloud-computing-technological-sovereignty-multi-cloud/",
+        "summary": "Martin Kleppmann discusses the urgent need for technological sovereignty in modern infrastructure and explores the shifting landscape of global tech dependencies",
+        "why_it_matters": "This presentation emphasizes the importance of technological sovereignty and the need for organizations to develop strategies to mitigate geopolitical risks in the age of AI"
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Notion Restores Access to Anthropic",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/07/notion-restores-access-to-anthropic-after-service-disruption/",
+        "summary": "Notion restored access to Anthropic after a service disruption, with the company's head of product expressing surprise at the level of interest in the issue",
+        "why_it_matters": "This incident highlights the growing dependence on AI-powered tools and the need for organizations to develop robust infrastructure to support their operations"
+      },
+      {
+        "title": "Microsoft Launches Logic Apps Automation",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/06/azure-logic-apps-automation/",
+        "summary": "Microsoft announced Logic Apps Automation at Build 2026, a new SKU packaging workflows, AI agents, knowledge services, and model access into a managed SaaS experience",
+        "why_it_matters": "This launch demonstrates Microsoft's commitment to providing organizations with the tools they need to automate and streamline their operations using AI"
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "OpenAI is Still Working on that ‘Super App’",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/",
+        "summary": "A senior OpenAI employee stated that the company is still working on a 'super app', despite rumors of its demise",
+        "why_it_matters": "This development highlights the ongoing competition in the AI market and the need for companies to innovate and adapt to changing user needs"
+      },
+      {
+        "title": "How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/uk-sovereign-ai-advancements/",
+        "summary": "NVIDIA and its partners are showcasing how the UK's commitment to becoming an AI maker is producing real momentum across the nation's industries",
+        "why_it_matters": "This article highlights the growing importance of AI in national economies and the need for governments to develop strategies to support its development and deployment"
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Building Pakistan Notice Helper",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/build-small-hackathon/building-pakistan-notice-helper",
+        "summary": "The article discusses the development of a small AI tool to address a local safety problem in Pakistan",
+        "why_it_matters": "This project highlights the potential of AI to drive positive social change and improve the lives of people in developing countries"
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Microsoft Discovery Reaches GA on Azure",
+    "source": "InfoQ AI/ML",
+    "link": "https://www.infoq.com/news/2026/06/microsoft-discovery-majorana-2/",
+    "summary": "Microsoft announced the general availability of Microsoft Discovery, its Azure-based platform for deploying autonomous AI agent teams in scientific R&D, powering the development of Majorana 2 Quantum Chip",
+    "why_it_matters": "This development showcases Microsoft's commitment to advancing AI research and its potential to drive breakthroughs in fields like quantum computing, highlighting the growing importance of AI in driving innovation and progress"
+  }
+}
