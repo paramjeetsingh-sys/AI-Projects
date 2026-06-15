@@ -1,0 +1,74 @@
+{
+  "date": "2026-06-15",
+  "total_articles": 6,
+  "headline": "OpenAI launches the Partner Network with a $150M investment to accelerate enterprise AI adoption, while Anthropic releases and suspends Claude Fable 5 due to a U.S. government export directive.",
+  "tldr": "Today's AI news is marked by significant developments in AI adoption and model releases. OpenAI's Partner Network aims to accelerate enterprise AI, and Anthropic's Claude Fable 5, though temporarily suspended, showcases advancements in long-horizon tasks. Researchers also explored vision LLMs, GPU time-slicing, and data agency, highlighting the complexity and potential of AI systems.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Introducing the OpenAI Partner Network",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/introducing-openai-partner-network",
+        "summary": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation.",
+        "why_it_matters": "This investment signifies OpenAI's commitment to expanding AI adoption across industries, potentially leading to more widespread and innovative applications of AI technology."
+      },
+      {
+        "title": "Anthropic Releases and Temporarily Suspends Claude Fable 5",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/06/claude-5-release/",
+        "summary": "Anthropic launched Claude Fable 5, a model for long-horizon tasks, but it was taken offline due to a U.S. government export directive, highlighting the regulatory challenges AI models can face.",
+        "why_it_matters": "The release and suspension of Claude Fable 5 underscore the complex interplay between AI development, regulatory environments, and international relations, affecting the pace and direction of AI advancements."
+      }
+    ],
+    "research": [
+      {
+        "title": "Vision LLMs are PDF Parsers Too: Reading Charts and Diagrams for RAG",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/vision-llms-are-pdf-parsers-too-reading-charts-and-diagrams-for-rag/",
+        "summary": "Vision LLMs can read charts and diagrams in PDFs, expanding their capabilities beyond text, which could enhance document intelligence and analysis.",
+        "why_it_matters": "This capability signifies a step forward in integrating visual and textual data analysis, potentially revolutionizing how AI systems interact with and understand complex documents."
+      },
+      {
+        "title": "GPU Time-Slicing for Concurrent LLM Agents on Kubernetes",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/gpu-time-slicing-for-concurrent-llm-agents-on-kubernetes/",
+        "summary": "A deep dive into the microarchitectural costs of Kubernetes GPU time-slicing for concurrent LLM agents, revealing the complexities of optimizing AI workload deployment.",
+        "why_it_matters": "Understanding these costs is crucial for efficiently deploying and managing AI workloads, especially in cloud environments, to ensure scalability and cost-effectiveness."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "4 Lines You Should Include in Your Claude Skill",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/4-lines-you-must-include-in-your-claude-skill/",
+        "summary": "Including specific lines in Claude skills can prevent it from being confidently wrong, improving the accuracy and reliability of AI interactions.",
+        "why_it_matters": "This advice is essential for developers aiming to create more robust and trustworthy AI applications, highlighting the importance of meticulous design in AI development."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Introducing the OpenAI Partner Network",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/introducing-openai-partner-network",
+        "summary": "OpenAI's $150M investment in the Partner Network is a significant move to accelerate enterprise AI adoption globally.",
+        "why_it_matters": "This investment demonstrates OpenAI's strategic approach to expanding its influence and capabilities in the enterprise AI sector, which could lead to more businesses adopting AI solutions."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Podcast: Increasing Users' Data Agency: From BlueSky's AT Protocol to the Local-First Software Movement",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/podcasts/increasing-users-data-agency/",
+        "summary": "The podcast discusses the evolution of data systems, emphasizing the shift towards modular, user-centric approaches and the importance of data agency.",
+        "why_it_matters": "This discussion highlights the growing awareness of the need for more decentralized and user-controlled data management systems, reflecting broader societal concerns about data privacy and autonomy."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Introducing the OpenAI Partner Network",
+    "source": "OpenAI Blog",
+    "link": "https://openai.com/index/introducing-openai-partner-network",
+    "summary": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation.",
+    "why_it_matters": "This significant investment by OpenAI in its Partner Network indicates a major push towards making AI more accessible and integral to businesses worldwide, which could accelerate the integration of AI across various industries."
+  }
+}
