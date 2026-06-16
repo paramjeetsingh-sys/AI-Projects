@@ -1,0 +1,88 @@
+{
+  "date": "2026-06-16",
+  "total_articles": 9,
+  "headline": "Salesforce acquires AI customer service platform Fin for $3.6B, highlighting the growing importance of AI in customer service",
+  "tldr": "Today's AI news is dominated by significant developments in the industry, including major acquisitions and government interventions. Salesforce's acquisition of Fin and Respond.io's $62.5M funding round demonstrate the growing importance of AI in customer service. Meanwhile, the US government's ban on Anthropic's models has sparked controversy and debate among cybersecurity experts.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "As AI agents become employees, NewCore emerges with $66M to give them identities",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/",
+        "summary": "NewCore argues that the next challenge in enterprise security will be managing AI agents, not people. The company has raised $66M to develop a platform that gives AI agents identities.",
+        "why_it_matters": "This development highlights the growing importance of AI agents in enterprise security and the need for effective management and identity solutions."
+      }
+    ],
+    "research": [
+      {
+        "title": "How to Effectively Align with Claude Code",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/how-to-effectively-align-with-claude-code/",
+        "summary": "The article provides tips and strategies for effectively aligning with Claude Code, a large language model. It highlights the importance of productivity and efficiency when working with LLMs.",
+        "why_it_matters": "This research is important for developers and users of LLMs, as it provides practical advice on how to get the most out of these models."
+      },
+      {
+        "title": "Anthropic Explains How Claude Builds Its Own Execution Harnesses",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/06/claude-code-harnesses/",
+        "summary": "Anthropic has published details about the orchestration system behind Claude Code's Dynamic Workflows. The feature generates custom execution harnesses designed to coordinate teams of AI agents for complex tasks.",
+        "why_it_matters": "This research provides insight into the inner workings of Claude Code and the development of Dynamic Workflows, which has significant implications for the future of AI development."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "PostgreSQL 19 Beta Introduces SQL Graph Queries and Concurrent Table Repacking",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/06/postgresql-19-graph-queries/",
+        "summary": "PostgreSQL 19 Beta has been announced, with general availability expected in September. The release introduces native SQL Property Graph Queries and concurrent table repacking to reclaim storage without downtime.",
+        "why_it_matters": "This update is significant for developers and users of PostgreSQL, as it provides new features and improvements that can enhance the performance and efficiency of their applications."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Malaysia’s AI agent-powered messaging app Respond.io raises $62.5M, eyes acquisitions",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/15/malaysias-respond-io-raises-62-5m-eyes-acquisitions-in-north-america-and-europe/",
+        "summary": "Respond.io, a Malaysian startup, has raised $62.5M in funding. The company uses AI agents to handle high volumes of customer inquiries and charges per conversation, not per seat.",
+        "why_it_matters": "This funding round highlights the growing importance of AI in customer service and the potential for startups to disrupt traditional industries."
+      },
+      {
+        "title": "Salesforce acquires AI customer service platform Fin for $3.6B",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/",
+        "summary": "Salesforce has acquired Fin, an AI customer service platform, for $3.6B. The company plans to use Fin's team and technology to improve its existing enterprise platform.",
+        "why_it_matters": "This acquisition demonstrates the growing importance of AI in customer service and the willingness of major companies to invest in AI-powered solutions."
+      },
+      {
+        "title": "SpaceX is public: Everything you need to know post-IPO",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/15/spacex-is-public-everything-you-need-to-know-post-ipo/",
+        "summary": "SpaceX has gone public, and TechCrunch has provided an overview of the company's history, struggles, and successes. The article also includes information about the company's post-IPO plans.",
+        "why_it_matters": "This development is significant for the space industry and the broader tech sector, as it highlights the growing importance of private companies in space exploration and development."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "The US government’s Anthropic models ban was never about an AI jailbreak",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
+        "summary": "The US government's decision to ban Anthropic's models has sparked controversy and debate. The ban is seen as a reaction to the growing power of AI and the potential risks it poses.",
+        "why_it_matters": "This development highlights the growing tension between the AI industry and government regulators, and the need for clear policies and guidelines on AI development and deployment."
+      },
+      {
+        "title": "Cybersecurity vets protest ‘dangerous’ US government ban on Anthropic’s most powerful models",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/",
+        "summary": "A group of cybersecurity experts has protested the US government's ban on Anthropic's models, arguing that it will limit the ability of cybersecurity defenders to secure their software and products.",
+        "why_it_matters": "This development highlights the potential risks and consequences of government intervention in the AI industry, and the need for careful consideration and consultation with experts."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Salesforce acquires AI customer service platform Fin for $3.6B",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/",
+    "summary": "Salesforce has acquired Fin, an AI customer service platform, for $3.6B. The company plans to use Fin's team and technology to improve its existing enterprise platform.",
+    "why_it_matters": "This acquisition demonstrates the growing importance of AI in customer service and the willingness of major companies to invest in AI-powered solutions."
+  }
+}
