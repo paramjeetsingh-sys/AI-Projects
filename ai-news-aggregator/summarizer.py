@@ -1,11 +1,9 @@
 import json
+import os
 from typing import List, Dict
 from datetime import datetime
 
-from groq import Groq
-
-client = Groq()  # reads GROQ_API_KEY from environment
-
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 MODEL = "llama-3.3-70b-versatile"
 
 SYSTEM_PROMPT = """You are an expert AI journalist and curator. Your job is to analyze a list of AI news articles and create a structured daily digest.
@@ -37,6 +35,36 @@ Return a valid JSON object with this exact structure:
   "top_story": {"title": "...", "source": "...", "link": "...", "summary": "...", "why_it_matters": "..."}
 }"""
 
+# Keywords for each category (used in LLM-free fallback mode)
+CATEGORY_KEYWORDS = {
+    "new_models": [
+        "launch", "launches", "release", "releases", "new model", "introduce", "introduces",
+        "unveil", "unveils", "announce", "announces", "debut", "debuting",
+        "gpt-5", "gpt5", "claude 4", "gemini 2", "llama 4", "mistral", "o3", "o4",
+    ],
+    "research": [
+        "research", "paper", "study", "findings", "breakthrough", "arxiv",
+        "benchmark", "outperforms", "surpasses", "scientist", "discover",
+        "experiment", "dataset", "training", "evaluation",
+    ],
+    "features_updates": [
+        "update", "feature", "improvement", "upgrade", "version", "now supports",
+        "adds", "adding", "plugin", "integration", "rolls out", "expands",
+        "enhanced", "improvement", "fix", "patch",
+    ],
+    "industry_business": [
+        "fund", "funding", "acquire", "acquisition", "partner", "partnership",
+        "billion", "million", "invest", "investment", "deal", "merge", "merger",
+        "startup", "valuation", "ipo", "revenue", "profit", "ceo", "hire",
+        "layoff", "employee", "company", "corporation",
+    ],
+    "policy_society": [
+        "regulation", "law", "policy", "safety", "ethics", "ban", "bans",
+        "congress", "senate", "eu", "government", "legal", "court", "lawsuit",
+        "rights", "bias", "harm", "risk", "concern", "impact", "society",
+    ],
+}
+
 
 def build_articles_text(articles: List[Dict]) -> str:
     lines = []
@@ -49,20 +77,64 @@ def build_articles_text(articles: List[Dict]) -> str:
     return "\n".join(lines)
 
 
-def summarize_news(articles: List[Dict]) -> Dict:
-    if not articles:
-        return _empty_digest()
+def _categorize_article(article: Dict) -> str:
+    text = (article.get("title", "") + " " + article.get("summary", "")).lower()
+    scores = {cat: 0 for cat in CATEGORY_KEYWORDS}
+    for cat, keywords in CATEGORY_KEYWORDS.items():
+        for kw in keywords:
+            if kw in text:
+                scores[cat] += 1
+    best = max(scores, key=scores.get)
+    return best if scores[best] > 0 else "features_updates"
 
-    today = datetime.now().strftime("%Y-%m-%d")
-    articles_text = build_articles_text(articles[:80])  # cap at 80 articles
 
+def _categorize_by_keywords(articles: List[Dict], today: str) -> Dict:
+    cats: Dict[str, List] = {
+        "new_models": [], "research": [], "features_updates": [],
+        "industry_business": [], "policy_society": [],
+    }
+    for a in articles:
+        cat = _categorize_article(a)
+        cats[cat].append({
+            "title": a["title"],
+            "source": a["source"],
+            "link": a["link"],
+            "summary": a["summary"][:300],
+            "why_it_matters": "",
+        })
+
+    top = articles[0] if articles else None
+    top_story = {
+        "title": top["title"], "source": top["source"],
+        "link": top["link"], "summary": top["summary"][:300],
+        "why_it_matters": "",
+    } if top else None
+
+    source_list = ", ".join(sorted({a["source"] for a in articles[:5]}))
+    return {
+        "date": today,
+        "total_articles": len(articles),
+        "headline": top["title"] if top else "Today in AI",
+        "tldr": (
+            f"Fetched {len(articles)} AI articles today from sources including {source_list}. "
+            f"Stories span new model releases, research, industry moves, and policy. "
+            f"Add a GROQ_API_KEY environment variable to enable AI-powered summaries."
+        ),
+        "categories": cats,
+        "top_story": top_story,
+    }
+
+
+def _summarize_with_groq(articles: List[Dict], today: str) -> Dict:
+    from groq import Groq
+    client = Groq()
+    articles_text = build_articles_text(articles[:80])
     print(f"Summarizing {min(len(articles), 80)} articles with {MODEL} via Groq...")
-
     response = client.chat.completions.create(
         model=MODEL,
         max_tokens=8192,
         temperature=0.3,
-        response_format={"type": "json_object"},  # guarantees valid JSON output
+        response_format={"type": "json_object"},
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {
@@ -76,15 +148,27 @@ def summarize_news(articles: List[Dict]) -> Dict:
             },
         ],
     )
-
     raw = response.choices[0].message.content
     try:
         digest = json.loads(raw)
         digest["total_articles"] = len(articles)
         return digest
     except json.JSONDecodeError as e:
-        print(f"[WARN] JSON parse failed: {e}. Using fallback digest.")
-        return _fallback_digest(articles, today)
+        print(f"[WARN] JSON parse failed: {e}. Using keyword-based fallback.")
+        return _categorize_by_keywords(articles, today)
+
+
+def summarize_news(articles: List[Dict]) -> Dict:
+    if not articles:
+        return _empty_digest()
+
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    if GROQ_API_KEY:
+        return _summarize_with_groq(articles, today)
+
+    print("No GROQ_API_KEY found — using keyword-based categorization (set GROQ_API_KEY for AI summaries).")
+    return _categorize_by_keywords(articles, today)
 
 
 def _empty_digest() -> Dict:
@@ -97,22 +181,5 @@ def _empty_digest() -> Dict:
             "new_models": [], "research": [], "features_updates": [],
             "industry_business": [], "policy_society": [],
         },
-        "top_story": None,
-    }
-
-
-def _fallback_digest(articles: List[Dict], today: str) -> Dict:
-    cats = {"new_models": [], "research": [], "features_updates": [], "industry_business": [], "policy_society": []}
-    for a in articles[:20]:
-        cats["features_updates"].append({
-            "title": a["title"], "source": a["source"], "link": a["link"],
-            "summary": a["summary"][:200], "why_it_matters": "",
-        })
-    return {
-        "date": today,
-        "total_articles": len(articles),
-        "headline": articles[0]["title"] if articles else "Today in AI",
-        "tldr": f"Fetched {len(articles)} AI articles today across major sources.",
-        "categories": cats,
         "top_story": None,
     }

@@ -1,95 +1,14 @@
 {
   "date": "2026-06-17",
-  "total_articles": 22,
-  "headline": "NVIDIA and Google lead the charge in AI innovation with new releases and partnerships, while Anthropic and OpenAI face challenges and controversies",
-  "tldr": "Today's AI news is dominated by major releases and partnerships from industry leaders like NVIDIA and Google, while Anthropic and OpenAI face challenges and controversies. NVIDIA has announced several new developments, including the public beta of NVIDIA XR AI and the expansion of the HPE AI Factory. Google has released Android 17 with new multitasking features and expanded Gemini features. Meanwhile, Anthropic is facing a feud with the Trump administration, and OpenAI is losing billions of dollars a year. These developments highlight the rapidly evolving AI landscape and the complex challenges and opportunities that come with it.",
+  "total_articles": 0,
+  "headline": "No AI news found today.",
+  "tldr": "No articles were fetched today. Check your network or RSS feed sources.",
   "categories": {
-    "new_models": [
-      {
-        "title": "NVIDIA XR AI",
-        "source": "NVIDIA Blog",
-        "link": "https://blogs.nvidia.com/blog/nvidia-xr-ai/",
-        "summary": "NVIDIA XR AI is now available in public beta, giving developers a framework for building multimodal AI agents for AR glasses and XR devices.",
-        "why_it_matters": "This release highlights NVIDIA's commitment to advancing AI technology and providing developers with the tools they need to create innovative applications."
-      },
-      {
-        "title": "Android 17",
-        "source": "TechCrunch AI",
-        "link": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/",
-        "summary": "Google has released Android 17 and Wear OS 7, introducing new multitasking features, parental controls, security tools, and smartwatch upgrades.",
-        "why_it_matters": "This release demonstrates Google's ongoing efforts to improve the Android operating system and provide users with more features and functionality."
-      }
-    ],
-    "research": [
-      {
-        "title": "Exclusive eBook: How AI is becoming the next military advisor",
-        "source": "MIT Technology Review",
-        "link": "https://www.technologyreview.com/2026/06/16/1138905/exclusive-ebook-how-ai-is-becoming-the-next-military-advisor/",
-        "summary": "A collection of stories about how militaries are using AI models to make decisions.",
-        "why_it_matters": "This eBook highlights the growing use of AI in military decision-making and the potential implications for national security and international relations."
-      },
-      {
-        "title": "RAG Questions Need Parsing Too: Turn the User’s String Into Briefs for Retrieval and Generation",
-        "source": "Towards Data Science",
-        "link": "https://towardsdatascience.com/question-parsing-in-rag-structure-before-you-search/",
-        "summary": "Enterprise Document Intelligence [Vol.1 #6a] - Why a user question deserves the same parsing as the document, and how it splits into a retrieval brief and a generation brief before either runs",
-        "why_it_matters": "This article highlights the importance of parsing user questions in RAG systems and provides insights into how to improve the retrieval and generation processes."
-      }
-    ],
-    "features_updates": [
-      {
-        "title": "Anthropic pauses token-based billing for its Claude Agent SDK",
-        "source": "Ars Technica",
-        "link": "https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk/",
-        "summary": "Move originally planned for Monday would have heavily increased power users' costs.",
-        "why_it_matters": "This update highlights Anthropic's efforts to adjust its pricing model and provide more flexibility for its users."
-      },
-      {
-        "title": "GitHub Copilot Desktop App Targets Parallel Agentic Workflows",
-        "source": "InfoQ AI/ML",
-        "link": "https://www.infoq.com/news/2026/06/github-copilot-app/",
-        "summary": "GitHub has introduced the GitHub Copilot app, a desktop control centre for agent-native development that aims to keep engineers in charge while AI agents handle more coding work.",
-        "why_it_matters": "This release demonstrates GitHub's commitment to providing developers with tools that can help them work more efficiently with AI agents."
-      }
-    ],
-    "industry_business": [
-      {
-        "title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
-        "source": "Ars Technica",
-        "link": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
-        "summary": "Audited accounting shows growing revenues being dwarfed by R&D, other expenses.",
-        "why_it_matters": "This article highlights the financial challenges faced by OpenAI and the potential implications for the company's future development and growth."
-      },
-      {
-        "title": "SpaceX is public: Everything you need to know post-IPO",
-        "source": "TechCrunch AI",
-        "link": "https://techcrunch.com/2026/06/16/spacex-is-public-everything-you-need-to-know-post-ipo/",
-        "summary": "TechCrunch has followed SpaceX's start, struggles, and successes from the early days. And we're here for what happens next too.",
-        "why_it_matters": "This article provides an overview of SpaceX's IPO and the potential implications for the company's future development and growth."
-      }
-    ],
-    "policy_society": [
-      {
-        "title": "Sixty percent of US consumers say ‘AI’ in brand messaging is a turnoff, survey finds",
-        "source": "TechCrunch AI",
-        "link": "https://techcrunch.com/2026/06/16/sixty-percent-of-u-s-consumers-say-ai-in-brand-messaging-is-a-turnoff-survey-finds/",
-        "summary": "WordPress VIP’s latest survey suggests consumers are wary of AI-generated answers even as companies increasingly view AI search as an important referral channel.",
-        "why_it_matters": "This article highlights the potential risks and challenges associated with using AI in brand messaging and the importance of considering consumer perceptions and preferences."
-      },
-      {
-        "title": "Trump admin tries to block Clean Air Act lawsuit over xAI's gas turbines",
-        "source": "Ars Technica",
-        "link": "https://arstechnica.com/tech-policy/2026/06/trump-admin-helps-xai-fight-pollution-lawsuit-says-military-needs-grok-for-war/",
-        "summary": "NAACP lawsuit says xAI uses gas turbines without permits for Grok data center.",
-        "why_it_matters": "This article highlights the potential environmental and social implications of AI development and deployment, and the need for companies to consider these factors in their operations."
-      }
-    ]
+    "new_models": [],
+    "research": [],
+    "features_updates": [],
+    "industry_business": [],
+    "policy_society": []
   },
-  "top_story": {
-    "title": "NVIDIA XR AI",
-    "source": "NVIDIA Blog",
-    "link": "https://blogs.nvidia.com/blog/nvidia-xr-ai/",
-    "summary": "NVIDIA XR AI is now available in public beta, giving developers a framework for building multimodal AI agents for AR glasses and XR devices.",
-    "why_it_matters": "This release highlights NVIDIA's commitment to advancing AI technology and providing developers with the tools they need to create innovative applications."
-  }
+  "top_story": null
 }
