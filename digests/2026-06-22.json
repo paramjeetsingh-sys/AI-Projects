@@ -1,0 +1,74 @@
+{
+  "date": "2026-06-22",
+  "total_articles": 9,
+  "headline": "Anthropic's Claude now handles 95% of internal analytics queries, while NVIDIA achieves a breakthrough in cooling AI machines",
+  "tldr": "Today's AI news highlights significant advancements in AI capabilities and infrastructure. Anthropic's Claude is now handling a large majority of internal analytics queries, demonstrating its growing utility. Meanwhile, NVIDIA has made a breakthrough in cooling technology for AI servers, allowing for more efficient operation. Additionally, there are concerns over the Trump administration's crackdown on Anthropic and its potential impact on the AI ecosystem. Other stories cover new applications of AI, such as art generation and tool calling, as well as important research on ML model poisoning and neural networks.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Claude’s Hidden Art Skill: Making Illustrations With Code",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/06/claude-image-generation/",
+        "summary": "Claude can generate art using code, creating illustrations with shapes and coordinates that stay sharp at any size.",
+        "why_it_matters": "This demonstrates the growing capabilities of AI models in creative tasks, potentially expanding their applications in art and design."
+      }
+    ],
+    "research": [
+      {
+        "title": "Neural Networks, Explained for Beginners: Start Here If They’ve Confused You",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/neural-networks-explained-for-beginners-start-here-if-theyve-confused-you/",
+        "summary": "The article explains the intuition behind neural networks and the need for activation functions.",
+        "why_it_matters": "Understanding neural networks is crucial for developing and applying AI models, and this article provides a beginner-friendly introduction to the topic."
+      },
+      {
+        "title": "Understanding ML Model Poisoning: How It Happens and How to Detect It",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/articles/understanding-ml-model-poisoning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "The article explores data poisoning as a threat to machine learning systems, covering techniques and challenges in detecting poisoned data.",
+        "why_it_matters": "ML model poisoning is a significant security risk, and understanding how it happens and how to detect it is essential for ensuring the reliability and trustworthiness of AI systems."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+        "summary": "Samsung Electronics has deployed ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts.",
+        "why_it_matters": "This deployment demonstrates the growing adoption of AI tools in large enterprises, highlighting the potential for AI to enhance productivity and efficiency in various industries."
+      },
+      {
+        "title": "Anthropic Reports Claude Now Handles 95% of Internal Analytics Queries",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/06/anthropic-claude-analytics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Claude now handles around 95% of Anthropic's internal analytics requests, enabling employees to query business data independently.",
+        "why_it_matters": "This achievement showcases the capabilities of Claude and its potential to revolutionize the way companies approach data analysis and decision-making."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "When the Trump administration cracks down on Anthropic, who benefits?",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
+        "summary": "The article discusses the potential implications of the Trump administration's crackdown on Anthropic and its impact on the AI ecosystem.",
+        "why_it_matters": "This story highlights the complex interplay between government policies, regulatory environments, and the development of AI technologies, which can have significant consequences for the industry and its stakeholders."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Hotter Than a Hot Tub: The 45°C Breakthrough to Cool AI’s Biggest Machines",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
+        "summary": "NVIDIA has achieved a breakthrough in cooling technology for AI servers, allowing for more efficient operation at higher temperatures.",
+        "why_it_matters": "This innovation has significant implications for the environmental sustainability and energy efficiency of large-scale AI operations, which is essential for reducing the carbon footprint of the AI industry."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Anthropic Reports Claude Now Handles 95% of Internal Analytics Queries",
+    "source": "InfoQ AI/ML",
+    "link": "https://www.infoq.com/news/2026/06/anthropic-claude-analytics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "Claude now handles around 95% of Anthropic's internal analytics requests, enabling employees to query business data independently.",
+    "why_it_matters": "This achievement showcases the capabilities of Claude and its potential to revolutionize the way companies approach data analysis and decision-making, highlighting the growing importance of AI in enterprise settings."
+  }
+}
