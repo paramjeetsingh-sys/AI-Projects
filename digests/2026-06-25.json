@@ -1,0 +1,95 @@
+{
+  "date": "2026-06-25",
+  "total_articles": 18,
+  "headline": "OpenAI Unveils Custom Chip Designed for LLM Inference at Scale, Marking Significant Advancement in AI Hardware",
+  "tldr": "Today's AI news is dominated by advancements in AI hardware and research. OpenAI's unveiling of its custom chip, Jalapeño, designed for LLM inference at scale, highlights the push for more efficient AI processing. Additionally, researchers continue to explore new methods for improving AI models, including the self-improving loop in AI agents and anchor detection for RAG. The emergence of the web data infrastructure layer for AI also underscores the need for better data management to capitalize on AI's potential.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "OpenAI unveils its first custom chip, built by Broadcom",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+        "summary": "OpenAI has unveiled its first custom chip, named Jalapeño, designed specifically for the unique needs of OpenAI's inference systems. This marks a significant advancement in AI hardware.",
+        "why_it_matters": "The development of custom AI chips can lead to more efficient and cost-effective AI processing, which is crucial for the widespread adoption of AI technologies."
+      },
+      {
+        "title": "Harness-1: The 20B Retrieval Subagent That Beats GPT-5.4 at Search",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/06/harness-1-ai-retrieval-agent/",
+        "summary": "Harness-1 is a new retrieval subagent that outperforms GPT-5.4 at search tasks. It takes a simpler approach to search by focusing on retrieval rather than generation.",
+        "why_it_matters": "The development of more efficient and effective search agents can improve the overall performance of AI systems and enhance user experience."
+      }
+    ],
+    "research": [
+      {
+        "title": "The Self-Improving Loop in AI Agents: Architecture, Benefits, and How it Outperforms Traditional Agent Workflows",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/06/self-improving-loops/",
+        "summary": "A new design called the self-improving loop allows AI agents to learn from every result and improve over time. This guide explains the architecture, benefits, and advantages of this approach.",
+        "why_it_matters": "The self-improving loop has the potential to significantly enhance the capabilities of AI agents, enabling them to adapt and improve continuously."
+      },
+      {
+        "title": "A Three-Phase Factual Recall Circuit in Gemma-2B and Gemma-12B-IT",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/a-three-phase-factual-recall-circuit-in-gemma-2b-and-gemma-12b-it/",
+        "summary": "Activation patching reveals how facts are stored, routed, and read out across transformer layers. This study explores the mechanics of factual recall in Gemma-2B and Gemma-12B-IT models.",
+        "why_it_matters": "Understanding how AI models store and retrieve factual information is essential for improving their performance and reliability."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
+        "summary": "NVIDIA NeMo AutoModel accelerates the fine-tuning of transformers, enabling faster and more efficient model training.",
+        "why_it_matters": "Faster model training can accelerate the development and deployment of AI applications, leading to improved productivity and innovation."
+      },
+      {
+        "title": "Introducing computer use in Gemini 3.5 Flash",
+        "source": "Google DeepMind",
+        "link": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+        "summary": "Google DeepMind introduces computer use in Gemini 3.5 Flash, enhancing the capabilities of the Gemini model.",
+        "why_it_matters": "The introduction of computer use in Gemini 3.5 Flash demonstrates the ongoing efforts to improve the performance and functionality of AI models."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "AI researchers continue to leave Google for its rivals",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
+        "summary": "Top AI researchers are leaving Google for its rivals, including Anthropic, highlighting the intense competition for talent in the AI industry.",
+        "why_it_matters": "The movement of AI researchers between companies can impact the development and innovation of AI technologies, as well as the competitive landscape of the industry."
+      },
+      {
+        "title": "Agility Robotics plans to go public via SPAC in a $2.5B deal",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/",
+        "summary": "Agility Robotics plans to go public via a SPAC deal, valuing the company at $2.5 billion. The deal is expected to generate $620 million in proceeds.",
+        "why_it_matters": "The planned IPO of Agility Robotics demonstrates the growing interest in AI and robotics companies, as well as the increasing demand for innovative technologies."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Stripe, Anthropic, and OpenAI are backing an effort to stop respiratory infections",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/06/24/1139621/stripe-anthropic-and-openai-are-backing-an-effort-to-stop-respiratory-infections/",
+        "summary": "Stripe, Anthropic, and OpenAI are backing an effort to stop respiratory infections, highlighting the potential of AI and technology to address pressing healthcare challenges.",
+        "why_it_matters": "The application of AI and technology to healthcare can lead to significant improvements in disease prevention, diagnosis, and treatment, ultimately enhancing human well-being."
+      },
+      {
+        "title": "The emergence of the web data infrastructure layer for AI",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/",
+        "summary": "The emergence of the web data infrastructure layer for AI underscores the need for better data management to capitalize on AI's potential.",
+        "why_it_matters": "The development of a web data infrastructure layer for AI can facilitate the creation of more efficient and effective AI systems, leading to improved decision-making and innovation."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "OpenAI Unveils Custom Chip Designed for LLM Inference at Scale",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+    "summary": "OpenAI has unveiled its first custom chip, named Jalapeño, designed specifically for the unique needs of OpenAI's inference systems. This marks a significant advancement in AI hardware.",
+    "why_it_matters": "The development of custom AI chips can lead to more efficient and cost-effective AI processing, which is crucial for the widespread adoption of AI technologies."
+  }
+}
