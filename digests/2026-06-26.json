@@ -1,0 +1,109 @@
+{
+  "date": "2026-06-26",
+  "total_articles": 14,
+  "headline": "The White House asks OpenAI to slow down the release of its new model due to safety concerns, while Anthropic's Claude gains traction among paid consumers.",
+  "tldr": "Today's AI news is marked by significant developments in AI model releases, funding, and market trends. The White House has expressed safety concerns over OpenAI's new model, prompting a slower rollout. Meanwhile, Anthropic's Claude is gaining popularity among paid consumers, and Patronus AI has secured $50M in funding to build digital worlds for stress-testing AI agents. Additionally, there are notable advancements in AI research, features, and industry partnerships.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
+        "summary": "The White House has asked OpenAI to slow down the release of its new model, GPT 5.6, due to safety concerns. The model will be shared with a select group of partners instead of the broader public.",
+        "why_it_matters": "This development highlights the growing concerns around AI safety and the need for responsible AI development and deployment."
+      },
+      {
+        "title": "General Intuition’s $2.3B bet that video games can train AI agents for the real world",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
+        "summary": "General Intuition has raised $320 million to scale AI trained on millions of hours of gameplay, betting that action data can help AI develop human-like intuition.",
+        "why_it_matters": "This investment showcases the potential of alternative training methods for AI agents, which could lead to more advanced and human-like AI capabilities."
+      }
+    ],
+    "research": [
+      {
+        "title": "Vector RAG Isn’t Enough — I Built a Context Graph Layer for Multi-Agent Memory",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/vector-rag-isnt-enough-i-built-a-context-graph-layer-for-multi-agent-memory/",
+        "summary": "The author benchmarked raw chat history, vector-only RAG, and a context graph on the same multi-agent conversations, exposing a weakness in relational retrieval.",
+        "why_it_matters": "This research contributes to the development of more advanced multi-agent memory systems, which could improve the performance of AI models in complex conversations."
+      },
+      {
+        "title": "3 Agents. 3 LLMs. 1 Aging GPU: Engineering Parallel Inference on Bare Metal",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/3-agents-3-llms-1-aging-gpu-engineering-parallel-inference-on-bare-metal/",
+        "summary": "The author demonstrates how to run three different LLMs on a single 8GB GPU using C++ layer multiplexing and admission control.",
+        "why_it_matters": "This research showcases the potential for optimizing AI inference on limited hardware, making AI more accessible and efficient."
+      },
+      {
+        "title": "An LLM as arbiter in RAG retrieval: picking the right candidate with reasons",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/letting-an-llm-pick-the-right-rag-page-the-arbiter-pattern-at-the-end-of-retrieval/",
+        "summary": "The author proposes using an LLM as an arbiter in RAG retrieval to rank candidates with reasons, providing a more transparent and defendable output.",
+        "why_it_matters": "This approach could improve the reliability and trustworthiness of AI-powered retrieval systems, making them more suitable for high-stakes applications."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Run a vLLM Server on HF Jobs in One Command",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/vllm-jobs",
+        "summary": "Hugging Face introduces a new feature to run a vLLM server on HF Jobs with a single command, simplifying the deployment process.",
+        "why_it_matters": "This update streamlines the deployment of AI models, making it more accessible to developers and reducing the barrier to entry for AI adoption."
+      },
+      {
+        "title": "Which tokens does a hybrid model predict better?",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/allenai/hybrid-token-prediction",
+        "summary": "The author explores the performance of hybrid models in token prediction tasks, providing insights into their strengths and weaknesses.",
+        "why_it_matters": "This research contributes to the understanding of hybrid models and their potential applications, which could lead to more accurate and efficient AI models."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Patronus AI lands $50M to build ‘digital worlds’ that stress-test AI agents",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
+        "summary": "Patronus AI has secured $50M in funding to build digital worlds for stress-testing AI agents, experiencing high demand for its services.",
+        "why_it_matters": "This investment highlights the growing need for robust testing and validation of AI agents, which is crucial for ensuring their reliability and safety in real-world applications."
+      },
+      {
+        "title": "Anthropic’s Claude is winning over paid consumers, a market owned by ChatGPT",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
+        "summary": "Anthropic's Claude is gaining popularity among paid consumers, challenging ChatGPT's dominance in the market.",
+        "why_it_matters": "This development indicates a shift in the AI market, with consumers increasingly seeking alternative AI solutions that offer unique features and benefits."
+      },
+      {
+        "title": "The Ultimate Summer Sale Pairing: Steam Sale Meets GeForce NOW Discounts",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-steam-summer-sale-2026/",
+        "summary": "NVIDIA announces a summer sale pairing, offering discounts on GeForce NOW memberships and Steam games.",
+        "why_it_matters": "This promotion could drive the adoption of cloud gaming and AI-powered entertainment, making high-quality gaming experiences more accessible to a wider audience."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
+        "summary": "The White House has asked OpenAI to slow down the release of its new model due to safety concerns, highlighting the need for responsible AI development and deployment.",
+        "why_it_matters": "This development underscores the importance of AI safety and the role of regulatory bodies in ensuring that AI systems are developed and deployed responsibly."
+      },
+      {
+        "title": "Anthropic says Alibaba must be punished for largest Claude cloning attack",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
+        "summary": "Anthropic accuses Alibaba of launching a large-scale cloning attack on its Claude model, calling for punishment and highlighting the need for stronger AI security measures.",
+        "why_it_matters": "This incident highlights the risks of AI model theft and the importance of robust security measures to protect AI systems and intellectual property."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
+    "summary": "The White House has asked OpenAI to slow down the release of its new model, GPT 5.6, due to safety concerns. The model will be shared with a select group of partners instead of the broader public.",
+    "why_it_matters": "This development highlights the growing concerns around AI safety and the need for responsible AI development and deployment, with the White House taking a proactive role in regulating the release of new AI models."
+  }
+}
