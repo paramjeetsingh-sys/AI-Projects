@@ -1,52 +1,165 @@
 {
   "date": "2026-06-28",
-  "total_articles": 4,
-  "headline": "Apple Vision Pro executive leaves for OpenAI as Asian AI startups launch Mythos-like models",
-  "tldr": "Today's AI news sees significant movement in the industry with a key Apple executive joining OpenAI, while Asian startups are launching models similar to Mythos, potentially bypassing US export bans. Additionally, personal stories of AI use in healthcare are emerging, and technical guides on building powerful LLM knowledge bases are being shared. These developments highlight the rapid evolution and globalization of AI technology.",
+  "total_articles": 18,
+  "headline": "Anthropic Hits $965B Valuation & Files for IPO as Export Controls Ground Fable 5 Globally",
+  "tldr": "Anthropic has closed a new funding round at a $965 billion valuation — surpassing OpenAI's $852B private mark — and filed confidentially for an IPO. Meanwhile, US export controls continue to block access to Anthropic's most powerful models (Fable 5 and Mythos 5) worldwide, prompting Asian AI startups to race out competing models. The talent war intensifies as Nobel Prize winner John Jumper leaves Google DeepMind for Anthropic, and Apple's Vision Pro hardware chief heads to OpenAI. On the regulatory front, Colorado's AI Consumer Protection Act takes effect in two days.",
   "categories": {
     "new_models": [
       {
-        "title": "Asian AI startups launch Mythos-like models",
+        "title": "Claude Fable 5 & Mythos 5 Remain Disabled Globally After US Export Controls",
+        "source": "CNBC / Anthropic",
+        "link": "https://dentro.de/ai/news/",
+        "summary": "Anthropic launched Fable 5 and Mythos 5 on June 9, representing a major capability leap above Claude Opus 4.8. On June 12, the US government issued an urgent export-control directive citing national security concerns, and because Anthropic could not filter foreign nationals in real time, it disabled both models globally. They remain unavailable worldwide.",
+        "why_it_matters": "The most capable AI models are now caught in geopolitical crossfire. This is the first time a US government action has forced a lab to pull a flagship model globally rather than just restrict exports — a precedent that could reshape how frontier AI is deployed."
+      },
+      {
+        "title": "Asian AI Startups Launch Mythos-Like Models to Fill Export-Ban Gap",
         "source": "TechCrunch AI",
         "link": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
-        "summary": "New models are launching in Asia that promise Mythos-like capabilities without fear of an export ban.",
-        "why_it_matters": "This development matters because it shows how AI innovation is becoming more global, with companies finding ways to circumvent export bans, potentially altering the AI landscape."
+        "summary": "Several Asian AI startups are racing to release models with capability claims similar to Anthropic's Mythos 5, positioning themselves as accessible alternatives for users locked out by US export controls. Some are explicitly marketing themselves as 'export-ban proof.'",
+        "why_it_matters": "US export restrictions may be accelerating AI development outside American borders and giving non-US competitors a rare opening to capture enterprise customers who need reliable access to frontier-tier models."
+      },
+      {
+        "title": "Microsoft MAI-Code-1-Flash: First Home-Grown Coding Model Unveiled at Build 2026",
+        "source": "CNBC",
+        "link": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html",
+        "summary": "Microsoft launched MAI-Code-1-Flash at its Build 2026 developer conference, its first in-house model that converts natural-language descriptions into application source code. The model is designed to reduce Microsoft's dependence on OpenAI and lower API costs for developers on Azure.",
+        "why_it_matters": "Microsoft is the world's largest cloud provider. A homegrown coding model gives it leverage to compete with OpenAI's Codex and Anthropic's Claude Code at scale, and signals that the era of pure OpenAI dependency for Microsoft is ending."
+      },
+      {
+        "title": "Apple Launches Core AI Framework & Apple Foundation Models at WWDC 2026",
+        "source": "Multiple / WWDC 2026",
+        "link": "https://www.aimadetools.com/blog/best-ai-models-june-2026-roundup/",
+        "summary": "Apple unveiled Core AI and Apple Foundation Models (AFM) at WWDC 2026 — an entire on-device AI stack now open to developers. Unlike a single model launch, this is a platform play that lets app developers run AI inference fully on-device on iPhone and Mac.",
+        "why_it_matters": "On-device AI at Apple's scale (2B+ active devices) could shift the balance of power in consumer AI toward privacy-preserving, low-latency local inference, and away from cloud-dependent LLM services."
+      },
+      {
+        "title": "Zhipu GLM-5.2 Beats GPT-5.5 on SWE-bench Pro at 3% of the Price",
+        "source": "LLM Stats / Zhipu AI",
+        "link": "https://llm-stats.com/llm-updates",
+        "summary": "GLM-5.2 from Shanghai-based Zhipu AI achieved a SWE-bench Pro score of 62.1, outperforming GPT-5.5's 58.6, while costing just $1.40 per million input tokens compared to GPT-5.5's $30 per million output tokens — roughly 3% of the price for better coding performance.",
+        "why_it_matters": "Price-performance benchmarks like this erode the justification for paying premium Western model prices, especially for software engineering use cases. It accelerates commoditization at the frontier."
+      },
+      {
+        "title": "MiniMax 3 Hits 1528 Elo at $0.53 per Million Tokens",
+        "source": "AI Made Tools / MiniMax",
+        "link": "https://www.aimadetools.com/blog/best-ai-models-june-2026-roundup/",
+        "summary": "Shanghai-based MiniMax released MiniMax 3 with a 1528 Elo leaderboard score and multimodal capabilities including best-in-class voice agent performance. At $0.53 per million tokens, it is among the cheapest high-capability models available.",
+        "why_it_matters": "MiniMax 3 demonstrates that world-class voice and multimodal AI is becoming a near-zero-cost commodity, threatening the business models of more expensive Western providers in voice AI and customer-service automation."
+      },
+      {
+        "title": "Noam Shazeer Joins OpenAI as Lead for Architecture Research",
+        "source": "Multiple / OpenAI",
+        "link": "https://llm-stats.com/llm-updates",
+        "summary": "Noam Shazeer, co-author of the landmark 2017 'Attention Is All You Need' transformer paper, announced on June 18 that he is joining OpenAI as Lead for Architecture Research. Shazeer had previously founded Character.AI, which was acquired.",
+        "why_it_matters": "Shazeer is arguably the most influential active AI researcher in the world. His return to frontier model research at OpenAI is a major talent acquisition that could meaningfully accelerate the architecture of GPT-6 and beyond."
       }
     ],
     "research": [
       {
-        "title": "How to Build a Powerful LLM Knowledge Base",
-        "source": "Towards Data Science",
-        "link": "https://towardsdatascience.com/how-to-build-a-powerful-llm-knowledge-base/",
-        "summary": "The article provides a guide on using coding agents to power a knowledge base for Large Language Models (LLMs).",
-        "why_it_matters": "This research matters because it contributes to the technical advancement of LLMs, which are crucial for many AI applications, by offering practical advice on enhancing their knowledge bases."
+        "title": "Physics-Informed ML Breakthrough Advances Climate and Fluid Dynamics Modeling",
+        "source": "AIP Advances / University of Hawaii at Manoa",
+        "link": "https://www.buildthisnow.com/blog/guide/mechanics/ai-research-june-2026",
+        "summary": "Researchers at the University of Hawaiʻi at Mānoa published a new algorithm in AIP Advances that enables AI to strictly adhere to physical laws while processing complex datasets, yielding significantly more accurate predictions in fluid dynamics and climate modeling.",
+        "why_it_matters": "Physics-informed ML is a critical bridge between AI and scientific simulation. More accurate climate models built on this approach could directly inform trillion-dollar policy decisions about energy infrastructure and disaster preparedness."
+      },
+      {
+        "title": "Neuromorphic Computers Now Solve Physics Equations Previously Requiring Supercomputers",
+        "source": "InfoWorld / Research Labs",
+        "link": "https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html",
+        "summary": "Researchers demonstrated that neuromorphic processors — hardware modeled after the human brain's neural architecture — can now solve complex physics simulation equations that previously required energy-hungry supercomputers, at a fraction of the energy cost.",
+        "why_it_matters": "Neuromorphic computing could slash the energy footprint of AI inference and simulation by orders of magnitude. For a field facing serious power-consumption critiques, this is a potentially transformative architecture path."
+      },
+      {
+        "title": "Founder Uses Claude to Build Personal AI Cancer Management System",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/",
+        "summary": "A tech founder diagnosed with cancer built a personal AI health management system using Claude, feeding all his medical records, lab results, and research papers into it to generate treatment options and questions for his oncology team.",
+        "why_it_matters": "This real-world case study illustrates the growing role of AI as a personal health advocate. As AI models improve at synthesizing medical literature, patient-facing AI health tools are shifting from informational to genuinely agentic."
       }
     ],
-    "features_updates": [],
+    "features_updates": [
+      {
+        "title": "Claude Code Leads AI Coding Market as OpenAI Codex Plays Catch-Up",
+        "source": "CNBC / TechCrunch",
+        "link": "https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html",
+        "summary": "Anthropic's Claude Code has pulled significantly ahead of OpenAI's Codex in enterprise AI coding adoption. OpenAI has responded by shifting its focus from consumer AI toward enterprise deployments, repositioning Codex as its primary tool for developer workflows.",
+        "why_it_matters": "The AI coding assistant market is shaping up as the most lucrative near-term AI battleground. Claude Code's dominance here is a major commercial differentiator for Anthropic and a strategic threat to OpenAI's enterprise revenue."
+      },
+      {
+        "title": "Boston Dynamics Integrates Gemini Robotics-ER 1.6 Into Spot Robot Dog",
+        "source": "Boston Dynamics / Google DeepMind",
+        "link": "https://dentro.de/ai/news/",
+        "summary": "Boston Dynamics announced a partnership with Google Cloud and DeepMind to embed Gemini Robotics-ER 1.6 into its Spot robot and Orbit AI visual inspection platform, enabling Spot to perform autonomous spatial reasoning and real-time decision-making in complex industrial environments.",
+        "why_it_matters": "Physical AI — robots that reason — is moving from research to commercial deployment. This partnership marks one of the most capable real-world AI-robotics integrations to date and signals where Google's hardware + AI ambitions are converging."
+      }
+    ],
     "industry_business": [
       {
-        "title": "Apple Vision Pro exec is reportedly leaving for OpenAI",
+        "title": "Anthropic Closes at $965B Valuation, Files Confidentially for IPO",
+        "source": "CNBC / Bloomberg",
+        "link": "https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html",
+        "summary": "Anthropic announced the closing of a new financing round valuing the company at $965 billion — surpassing OpenAI's most recent private valuation of $852 billion — and confirmed it has filed a confidential S-1 with the SEC for an IPO expected as early as late 2026.",
+        "why_it_matters": "Anthropic has overtaken OpenAI in private market valuation, a remarkable reversal given its younger age. An IPO at this scale would be one of the largest technology listings in history and marks the maturation of safety-focused AI as a commercial force."
+      },
+      {
+        "title": "OpenAI Files Confidential S-1 for IPO at $852B Valuation",
+        "source": "CNBC / SEC",
+        "link": "https://llm-stats.com/llm-updates",
+        "summary": "OpenAI filed a confidential S-1 with the SEC on June 8, 2026, setting the stage for a potential IPO as early as September 2026. The company was last valued at $852 billion in a private round in March, making it one of the largest pre-IPO companies in history.",
+        "why_it_matters": "OpenAI going public would create a new category of AI mega-cap stocks. The dual IPO filings from OpenAI and Anthropic in June 2026 represent a landmark moment for the AI industry's transition from venture-backed research to public markets."
+      },
+      {
+        "title": "Qualcomm in Talks to Acquire AI Chip Startup Tenstorrent for $8–10B",
+        "source": "Multiple / Bloomberg",
+        "link": "https://www.devflokers.com/blog/ai-tech-news-model-releases-june-2026",
+        "summary": "Qualcomm is in early acquisition talks with Tenstorrent, the AI chip startup co-founded by Jim Keller, at a reported valuation of $8–10 billion. The deal would give Qualcomm a significant foothold in dedicated AI inference silicon beyond its existing Snapdragon NPU efforts.",
+        "why_it_matters": "AI chip consolidation is accelerating. Qualcomm acquiring Tenstorrent would create a serious challenger to NVIDIA's AI silicon dominance and broaden the competitive landscape in a hardware market that underpins all of AI."
+      },
+      {
+        "title": "Meta Lays Off 8,000 Employees, Redirects 7,000 to AI Teams",
+        "source": "Multiple / Meta",
+        "link": "https://www.buildfastwithai.com/blogs/ai-news-today-june-22-2026",
+        "summary": "Meta began implementing layoffs affecting approximately 8,000 employees (roughly 10% of its total workforce), while simultaneously reassigning 7,000 additional employees to AI-focused divisions. The restructuring signals a major strategic pivot toward AI product development.",
+        "why_it_matters": "Meta is one of the largest AI research organizations in the world. This level of internal reorganization shows that even well-resourced tech giants are making painful cuts to concentrate capital and talent on AI — and raises the stakes for its open-source Llama model strategy."
+      },
+      {
+        "title": "Nobel Laureate John Jumper Leaves Google DeepMind for Anthropic",
+        "source": "CNBC",
+        "link": "https://www.cnbc.com/2026/06/19/john-jumper-to-leave-google-deepmind-for-anthropic.html",
+        "summary": "John Jumper, VP at Google DeepMind and 2024 Nobel Prize laureate in Chemistry for his AlphaFold work, is leaving to join Anthropic. He is the most senior and decorated researcher to leave Google DeepMind for a competitor in recent memory.",
+        "why_it_matters": "Jumper's departure is a major symbolic and practical blow to Google DeepMind. AlphaFold's success established DeepMind's scientific credibility; losing Jumper to Anthropic signals that the talent war for world-class researchers has intensified to an extraordinary degree."
+      },
+      {
+        "title": "Apple Vision Pro VP Paul Meade Leaves for OpenAI Hardware Team",
         "source": "TechCrunch AI",
         "link": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
-        "summary": "Paul Meade, the Apple vice president in charge of the Vision Pro headset, is reportedly leaving the company to join OpenAI’s hardware team.",
-        "why_it_matters": "This move matters because it indicates a significant talent shift in the AI industry, with potential implications for the development of AI-related hardware and software at both Apple and OpenAI."
+        "summary": "Paul Meade, Apple's vice president in charge of Vision Pro, is reportedly leaving Apple to join OpenAI's hardware team. OpenAI has been quietly building a hardware division reportedly focused on AI-native consumer devices.",
+        "why_it_matters": "Apple loses one of its most senior spatial computing executives at a sensitive time for Vision Pro's future. OpenAI gaining Apple-caliber hardware talent suggests its hardware ambitions are maturing from rumor to serious product effort."
       }
     ],
     "policy_society": [
       {
-        "title": "The fittest founder in the room got cancer. Here’s how he used AI to fight back.",
-        "source": "TechCrunch AI",
-        "link": "https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/",
-        "summary": "A founder used AI to fight cancer by feeding all his health data into an AI system named Claude.",
-        "why_it_matters": "This story matters because it highlights the personal and societal impact of AI in healthcare, demonstrating how individuals can leverage AI for personalized health management and potentially improving outcomes."
+        "title": "Colorado AI Consumer Protection Act Takes Effect June 30",
+        "source": "White House / State of Colorado",
+        "link": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+        "summary": "The Colorado Consumer Protections for Artificial Intelligence Act takes effect on June 30, applying new obligations to deployers and developers of 'high-risk' AI systems affecting Colorado residents. It includes requirements for transparency, bias audits, and consumer rights to contest AI-driven decisions.",
+        "why_it_matters": "Colorado is the first US state to enact comprehensive AI consumer-protection legislation. Companies serving Colorado residents — essentially all major AI platforms — must comply, and its framework is expected to influence legislation in other states."
+      },
+      {
+        "title": "Anthropic & DeepMind CEOs Call for US-Led AI Coalition at G7",
+        "source": "CNBC",
+        "link": "https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html",
+        "summary": "Anthropic CEO Dario Amodei and Google DeepMind CEO Demis Hassabis jointly called for the formation of a US-led international AI coalition at a closed-door G7 session attended by major tech CEOs and heads of state. They argued that coordinated governance is essential to prevent a race-to-the-bottom between nations.",
+        "why_it_matters": "Two of the most influential voices in AI safety are now pushing for multilateral governance frameworks. A formal US-led AI coalition would represent the most significant international AI governance initiative since the EU AI Act."
       }
     ]
   },
   "top_story": {
-    "title": "Apple Vision Pro exec is reportedly leaving for OpenAI",
-    "source": "TechCrunch AI",
-    "link": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
-    "summary": "Paul Meade, the Apple vice president in charge of the Vision Pro headset, is reportedly leaving the company to join OpenAI’s hardware team.",
-    "why_it_matters": "This move is significant because it signals a notable shift in talent and potentially in the strategic direction of both Apple and OpenAI, reflecting the competitive and dynamic nature of the AI industry."
+    "title": "Anthropic Closes at $965B Valuation & Files for IPO — Surpasses OpenAI",
+    "source": "CNBC / Bloomberg",
+    "link": "https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html",
+    "summary": "Anthropic has closed a new financing round at a $965 billion valuation, overtaking OpenAI's $852 billion private mark, and filed confidentially for an IPO expected as early as late 2026. Both companies filing S-1s in the same month marks an unprecedented moment for the AI industry.",
+    "why_it_matters": "Anthropic surpassing OpenAI in private valuation — combined with both companies filing for IPO in the same month — is a watershed moment. It validates safety-focused AI as commercially dominant and sets the stage for the AI industry's transition from VC-backed research to trillion-dollar public companies."
   }
 }
