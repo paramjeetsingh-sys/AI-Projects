@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-01",
+  "total_articles": 25,
+  "headline": "Anthropic launches Claude Sonnet 5, a cheaper way to run agents, as AI landscape continues to evolve with new models, features, and industry developments.",
+  "tldr": "Today's AI news is dominated by Anthropic's launch of Claude Sonnet 5, a more affordable alternative to existing models. Additionally, there are significant developments in AI research, new features, and industry partnerships. The AI landscape is rapidly evolving, with a focus on improving model efficiency, safety, and accessibility. As AI becomes more integrated into various industries, companies are investing in AI-powered solutions, and researchers are exploring new applications and limitations of AI technology.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Anthropic launches Claude Sonnet 5",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+        "summary": "Anthropic’s Claude Sonnet 5 brings stronger agentic capabilities, lower pricing, and improved safety, positioning the model as a cheaper alternative to Opus, GPT-5.5, and Gemini Pro.",
+        "why_it_matters": "This launch is significant because it makes AI agents more accessible to a wider range of users, potentially accelerating the adoption of AI technology."
+      },
+      {
+        "title": "NVIDIA BioNeMo Agent Toolkit",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/claude-science-bionemo-agent-toolkit/",
+        "summary": "NVIDIA BioNeMo Agent Toolkit brings accelerated AI to life sciences researchers in Claude Science.",
+        "why_it_matters": "This toolkit is important because it enables life sciences researchers to leverage AI and GPU-accelerated computing to run more sophisticated workflows and iterate faster."
+      }
+    ],
+    "research": [
+      {
+        "title": "Context Engineering for RAG",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/context-engineering-for-rag-the-four-typed-inputs-behind-every-rag-answer/",
+        "summary": "The practice of context engineering for RAG involves typed pieces that converge on one LLM call, including corpus, conversation, and tool extensions.",
+        "why_it_matters": "This research is relevant because it highlights the importance of context engineering in RAG and its potential applications in various industries."
+      },
+      {
+        "title": "Stop Choosing Between Local and Cloud LLMs",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/stop-choosing-between-local-and-cloud-llms-a-field-guide-to-hybrid-patterns/",
+        "summary": "A hands-on walkthrough of a hybrid local-cloud workflow using Gemma 4 and GPT-5.4, with reasoning and structured outputs.",
+        "why_it_matters": "This research is significant because it provides a practical guide for implementing hybrid local-cloud workflows, which can help organizations optimize their AI infrastructure."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Acti puts AI agents directly into your smartphone keyboard",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/30/acti-puts-ai-agents-directly-into-your-smartphone-keyboard/",
+        "summary": "Acti is betting the smartphone keyboard is the next home for AI assistants, with a new keyboard for iOS and Android that works across apps and lets users create custom AI-powered shortcuts using natural language.",
+        "why_it_matters": "This update is important because it demonstrates the increasing integration of AI into everyday devices and applications, making AI more accessible to a broader audience."
+      },
+      {
+        "title": "Microsoft Brings AI-Powered Vulnerability Remediation to Azure DevOps with Copilot Autofix",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/06/azuredevops-copilot-autofix/",
+        "summary": "Microsoft has announced the limited public preview of Copilot Autofix for GitHub Advanced Security for Azure DevOps, extending AI-powered vulnerability remediation to teams using Azure Repos.",
+        "why_it_matters": "This update is significant because it highlights the growing importance of AI in cybersecurity and vulnerability remediation, and how companies are leveraging AI to improve their security posture."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "The DeepMind trio who built a poker AI are now making money for quant hedge funds",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/30/the-deepmind-trio-who-built-a-poker-ai-are-now-making-money-for-quant-hedge-funds/",
+        "summary": "EquiLibre Technologies, a Prague-based AI lab founded by three ex-DeepMind researchers, is now valued at more than $500 million.",
+        "why_it_matters": "This development is important because it demonstrates the potential for AI to generate significant revenue in various industries, including finance."
+      },
+      {
+        "title": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+        "summary": "Nvidia AI chip competitor Etched says it has already booked $1 billion under contract for the inference systems powered by its chip.",
+        "why_it_matters": "This news is significant because it highlights the growing competition in the AI chip market and the potential for new players to disrupt the industry."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Agriculture is ready for AI, but its data isn’t",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/06/30/1139513/agriculture-is-ready-for-ai-but-its-data-isnt/",
+        "summary": "Artificial intelligence is transforming what is possible in agriculture, but industry leaders should be wary of investing in AI without first laying the groundwork.",
+        "why_it_matters": "This article is important because it highlights the need for high-quality data in AI applications, particularly in industries like agriculture where data quality can have a significant impact on outcomes."
+      },
+      {
+        "title": "New attack provides one more reason why AI browsers are a bad idea",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/",
+        "summary": "Telling an LLM that 2 + 2 = 5 is enough to make it follow forbidden instructions.",
+        "why_it_matters": "This research is significant because it highlights the potential security risks associated with AI browsers and the need for developers to prioritize security and safety in AI applications."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Anthropic launches Claude Sonnet 5",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+    "summary": "Anthropic’s Claude Sonnet 5 brings stronger agentic capabilities, lower pricing, and improved safety, positioning the model as a cheaper alternative to Opus, GPT-5.5, and Gemini Pro.",
+    "why_it_matters": "This launch is significant because it makes AI agents more accessible to a wider range of users, potentially accelerating the adoption of AI technology."
+  }
+}
