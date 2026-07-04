@@ -1,0 +1,74 @@
+{
+  "date": "2026-07-04",
+  "total_articles": 7,
+  "headline": "Google DeepMind announces a first-of-its-kind research partnership with A24, exploring new frontiers in AI research and applications",
+  "tldr": "Today's AI news highlights a range of topics, from the intersection of technology and society to advancements in AI models and research partnerships. The Summer of Ludd festival in New York City is promoting a lifestyle that minimizes reliance on Big Tech, while Google DeepMind's partnership with A24 signals a significant collaboration in AI research. Additionally, several articles delve into the technical aspects of AI, including the differences between Large Action Models and agentic LLMs, the functionality of ReAct loops, and innovations in LLM wikis and retrieval methods.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Large Action Models (LAMs) vs Agentic LLMs: What’s the Real Difference?",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/07/large-action-models-vs-agentic-llms/",
+        "summary": "The article explains the distinction between Large Action Models and agentic LLMs, highlighting their different outcomes from the same input and the importance of understanding this difference in AI applications.",
+        "why_it_matters": "This distinction is crucial for developing AI systems that can perform complex tasks and make decisions based on their actions and observations."
+      }
+    ],
+    "research": [
+      {
+        "title": "The Untaught Lessons of RAG Retrieval: Cosine Is Not the Foundation",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/the-untaught-lessons-of-rag-retrieval-cosine-is-not-the-foundation/",
+        "summary": "The article challenges the conventional approach to RAG retrieval, suggesting that cosine similarity is not the foundation and presenting alternative perspectives on the retrieval brick.",
+        "why_it_matters": "This research has implications for improving the efficiency and effectiveness of information retrieval systems, which are essential in various AI applications."
+      },
+      {
+        "title": "AI Agents Explained: What Is a ReAct Loop and How Does It Work?",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/ai-agents-explained-what-is-a-react-loop-and-how-does-it-work/",
+        "summary": "The article provides an explanation of ReAct loops, a crucial component of AI agents, and how they facilitate reasoning, action, and observation in AI systems.",
+        "why_it_matters": "Understanding ReAct loops is essential for developing AI agents that can interact with their environment and make decisions based on their observations and actions."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "LLM Wikis Are Over-Engineered — I Replaced Mine With a Pure Python Compiler",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/llm-wikis-are-over-engineered-i-replaced-mine-with-a-pure-python-compiler/",
+        "summary": "The article presents a deterministic alternative to traditional LLM wikis, using a pure Python compiler to organize local notes and create a linked, linted wiki.",
+        "why_it_matters": "This innovation simplifies the process of creating and managing LLM wikis, making it more accessible and efficient for users."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Google DeepMind and A24 announce first-of-its-kind research partnership",
+        "source": "Google DeepMind",
+        "link": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+        "summary": "Google DeepMind and A24 have announced a research partnership, marking a significant collaboration in AI research and applications.",
+        "why_it_matters": "This partnership has the potential to drive innovation in AI research and lead to breakthroughs in various fields, from entertainment to education."
+      },
+      {
+        "title": "Presentation: Fine Tuning the Enterprise: Reinforcement Learning in Practice",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/presentations/rft-openai-model/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "The presentation discusses the application of reinforcement learning in fine-tuning enterprise models, using Agent RFT and custom reward signals.",
+        "why_it_matters": "This presentation highlights the potential of reinforcement learning in improving the performance of AI models in enterprise settings, leading to more efficient and effective decision-making."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Inside the Luddite festival harnessing Gen Z’s rage against Big Tech",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/culture/2026/07/inside-the-luddite-festival-harnessing-gen-zs-rage-against-big-tech/",
+        "summary": "The Summer of Ludd festival in New York City is promoting a lifestyle that minimizes reliance on Big Tech, encouraging people to live offline and engage with their surroundings.",
+        "why_it_matters": "This movement reflects growing concerns about the impact of technology on society and the need for a more balanced approach to technology use, highlighting the importance of considering the social implications of AI and technology."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Google DeepMind and A24 announce first-of-its-kind research partnership",
+    "source": "Google DeepMind",
+    "link": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+    "summary": "Google DeepMind and A24 have announced a research partnership, marking a significant collaboration in AI research and applications.",
+    "why_it_matters": "This partnership has the potential to drive innovation in AI research and lead to breakthroughs in various fields, from entertainment to education."
+  }
+}
