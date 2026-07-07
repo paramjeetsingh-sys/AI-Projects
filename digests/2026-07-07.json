@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-07",
+  "total_articles": 17,
+  "headline": "AI Continues to Advance with New Models, Features, and Applications, but Raises Concerns Over Security and Privacy",
+  "tldr": "Today's AI news highlights the rapid advancements in AI technology, with new models, features, and applications being developed and deployed. However, concerns over security and privacy continue to grow, with reports of AI-powered ransomware attacks and secret tracking of users. As AI becomes increasingly integrated into our daily lives, it's essential to address these concerns and ensure that AI is developed and used responsibly.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/lerobot-release-v060",
+        "summary": "The latest release of LeRobot, a robotics platform, includes new models and frameworks for the open robotics community.",
+        "why_it_matters": "This release demonstrates the potential for open-source AI to drive innovation in robotics and highlights the importance of collaboration and knowledge-sharing in the development of AI technology."
+      },
+      {
+        "title": "NVIDIA and Hugging Face Bring New Models and Frameworks to LeRobot for the Open Robotics Community",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics/",
+        "summary": "NVIDIA and Hugging Face are partnering to bring new models and frameworks to LeRobot, a robotics platform, to support the development of open robotics.",
+        "why_it_matters": "This partnership highlights the growing importance of collaboration and knowledge-sharing in the development of AI technology and demonstrates the potential for open-source AI to drive innovation in robotics."
+      }
+    ],
+    "research": [
+      {
+        "title": "How Open Models Are Driving AI Research",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/open-models-icml-2026/",
+        "summary": "The use of open models and AI infrastructure is becoming increasingly important in AI research, as demonstrated by the accepted papers at the International Conference on Machine Learning (ICML).",
+        "why_it_matters": "This trend highlights the growing importance of open-source AI and collaboration in driving innovation and advancements in AI research."
+      },
+      {
+        "title": "How Nations Are Deploying AI for Strategic Priorities",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/nations-deploy-ai-strategic-priorities/",
+        "summary": "Nations are increasingly investing in AI technology to support their strategic priorities, including economic development, national security, and healthcare.",
+        "why_it_matters": "This trend highlights the growing importance of AI in supporting national priorities and demonstrates the potential for AI to drive economic growth and innovation."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "You can now customize Siri’s pace and expressivity in the latest iOS 27 beta",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/",
+        "summary": "The latest iOS 27 beta includes a new feature that allows users to customize Siri's pace and expressivity.",
+        "why_it_matters": "This feature demonstrates Apple's efforts to make Siri more natural and personal, and highlights the growing importance of AI-powered virtual assistants in our daily lives."
+      },
+      {
+        "title": "Stop Ranking Agent Configs by Average Score",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/stop-ranking-agent-configs-by-average-score/",
+        "summary": "A new approach to ranking agent configurations suggests using best-worst comparisons, MaxDiff-style judging, and Plackett-Luce utility scores instead of average scores.",
+        "why_it_matters": "This approach highlights the importance of developing more effective methods for evaluating and optimizing AI systems, and demonstrates the potential for AI to drive innovation in areas such as decision-making and optimization."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Your family’s $300 stake in OpenAI",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai/",
+        "summary": "OpenAI CEO Sam Altman has promised that Americans will share in the wealth created by AI, with estimates suggesting that each family could receive around $300.",
+        "why_it_matters": "This promise highlights the potential for AI to drive economic growth and innovation, and demonstrates the growing importance of AI in our daily lives."
+      },
+      {
+        "title": "InfoQ Opens AI Security & Privacy Engineering Cohort for Regulated Industries",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/online-cohort-ai-security/",
+        "summary": "InfoQ has opened enrollment for a five-week AI Security & Privacy Engineering cohort for senior engineers and architects in regulated industries.",
+        "why_it_matters": "This cohort highlights the growing importance of AI security and privacy, and demonstrates the need for education and training in these areas to support the development of responsible AI systems."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "The ‘first’ AI-run ransomware attack still needed a human",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/",
+        "summary": "The first reported AI-run ransomware attack still required human intervention to execute, highlighting the ongoing importance of human involvement in cybercrime.",
+        "why_it_matters": "This incident demonstrates the potential risks and challenges associated with AI-powered cybercrime, and highlights the need for ongoing education and awareness-raising efforts to support the development of responsible AI systems."
+      },
+      {
+        "title": "If you use Google, you’re training its AI. Here’s how to opt out.",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out/",
+        "summary": "A recent change to Google's privacy settings allows the company to store more user data to improve its AI models, but users can opt out of this data collection.",
+        "why_it_matters": "This change highlights the growing importance of AI in supporting Google's services, and demonstrates the need for transparency and user control over data collection and use."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "The ‘first’ AI-run ransomware attack still needed a human",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/",
+    "summary": "The first reported AI-run ransomware attack still required human intervention to execute, highlighting the ongoing importance of human involvement in cybercrime.",
+    "why_it_matters": "This incident demonstrates the potential risks and challenges associated with AI-powered cybercrime, and highlights the need for ongoing education and awareness-raising efforts to support the development of responsible AI systems."
+  }
+}
