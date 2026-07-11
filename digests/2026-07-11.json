@@ -1,0 +1,79 @@
+{
+  "date": "2026-07-11",
+  "total_articles": 8,
+  "headline": "Apple sues OpenAI over alleged trade secret theft, highlighting escalating tensions in the AI industry",
+  "tldr": "Today's AI news is marked by significant developments in the industry, including Apple's lawsuit against OpenAI, the growing importance of open-source AI, and advancements in AI infrastructure and testing. Companies like Hugging Face and Anthropic are making strides in open-source AI and AI model development. Meanwhile, Cloudflare, Slack, and GitHub are introducing new features and tools to improve AI-driven workflows and testing.",
+  "categories": {
+    "new_models": [],
+    "research": [
+      {
+        "title": "The Download: Claude’s inner workings and OpenAI’s “super app”",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/",
+        "summary": "Anthropic has gained insight into Claude's inner workings, and OpenAI is working on a 'super app' that integrates various AI models.",
+        "why_it_matters": "This research provides a glimpse into the inner workings of AI models and the development of more comprehensive AI applications."
+      },
+      {
+        "title": "RAG Was Always a Temporary Workaround. What is Next?",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/rag-was-always-a-temporary-workaround-what-is-next/",
+        "summary": "Vector databases are a temporary solution, and the next AI infrastructure revolution will rely on persistent neural state and strict latency budgets.",
+        "why_it_matters": "This research highlights the limitations of current AI infrastructure and the need for more advanced solutions."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Cloudflare Introduces Temporary Accounts for Autonomous Worker Deployment",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/cloudflare-temp-accounts/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Cloudflare has introduced temporary accounts for AI agents to deploy Cloudflare Workers without creating a permanent account.",
+        "why_it_matters": "This feature enables more efficient and flexible deployment of AI-driven workflows."
+      },
+      {
+        "title": "Slack Introduces Agent Driven End-to-End Testing to Improve Resilience in UI Test Automation",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/slack-agentic-e2e-testing-ui/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Slack has introduced an AI-driven approach to end-to-end test automation, using AI agents to execute workflows based on intent.",
+        "why_it_matters": "This feature improves the resilience and efficiency of UI test automation."
+      },
+      {
+        "title": "GitHub Copilot CLI Gets Tabs and No-Config-File Tool Setup in Redesigned Terminal UI",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/copilot-cli-terminal-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "GitHub has redesigned the Copilot CLI terminal interface, adding a tabbed layout and a form-driven setup for MCP servers, skills, and plugins.",
+        "why_it_matters": "This update improves the user experience and streamlines the setup process for AI-driven development tools."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Apple sues OpenAI over alleged trade secret theft",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+        "summary": "Apple is suing OpenAI, alleging that the company stole trade secrets, with the misconduct directed by OpenAI's senior leadership.",
+        "why_it_matters": "This lawsuit highlights the escalating tensions and competition in the AI industry, with companies fiercely protecting their intellectual property."
+      },
+      {
+        "title": "Open source AI matters more than ever, according to Hugging Face’s Clem Delangue",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+        "summary": "Hugging Face's CEO emphasizes the importance of open-source AI, with the company growing into a platform for AI builders to share and download open models and datasets.",
+        "why_it_matters": "This highlights the growing significance of open-source AI and its potential to drive innovation and collaboration in the industry."
+      },
+      {
+        "title": "Hugging Face’s CEO on why companies are done renting their AI",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
+        "summary": "Hugging Face's CEO believes that companies are moving away from renting AI and towards owning and controlling their AI infrastructure.",
+        "why_it_matters": "This shift reflects the growing importance of AI as a core component of business operations, with companies seeking more control and customization over their AI systems."
+      }
+    ],
+    "policy_society": []
+  },
+  "top_story": {
+    "title": "Apple sues OpenAI over alleged trade secret theft",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+    "summary": "Apple is suing OpenAI, alleging that the company stole trade secrets, with the misconduct directed by OpenAI's senior leadership.",
+    "why_it_matters": "This lawsuit highlights the escalating tensions and competition in the AI industry, with companies fiercely protecting their intellectual property."
+  }
+}
