@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-12",
+  "total_articles": 4,
+  "headline": "OpenAI expands ChatGPT for families and households, while researchers tackle LLM limitations and hallucinations",
+  "tldr": "Today's AI news highlights OpenAI's push into household markets with ChatGPT, alongside research efforts to improve large language models (LLMs) and mitigate their tendency to 'hallucinate' or provide inaccurate information. These advancements and challenges underscore the ongoing evolution of AI technologies and their increasing presence in daily life. As AI models become more integrated into households and various applications, addressing their limitations and ensuring their safety and reliability becomes paramount.",
+  "categories": {
+    "new_models": [],
+    "research": [
+      {
+        "title": "RAG Evaluation Frameworks Compared: RAGAS vs TruLens vs DeepEval",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/07/rag-evaluation-frameworks/",
+        "summary": "The article compares RAG evaluation frameworks, highlighting the importance of assessing the performance of large language models (LLMs) to ensure they provide accurate and relevant information.",
+        "why_it_matters": "This research matters because it contributes to the development of more reliable and efficient LLMs, which are crucial for various applications, including those in households and industries."
+      },
+      {
+        "title": "Long Context Isn’t Free — I Built a Safe Prompt-Pruning Layer That Makes LLM Systems Work",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/long-context-isnt-free-i-built-a-safe-prompt-pruning-layer-that-makes-llm-systems-work/",
+        "summary": "The article introduces a prompt-pruning layer designed to reduce redundant and low-value tokens in LLMs, thereby improving their performance and efficiency.",
+        "why_it_matters": "This innovation is significant because it addresses a critical issue in LLMs - their tendency to accumulate unnecessary information, which can lead to decreased performance and increased costs."
+      },
+      {
+        "title": "That Is Embarrassing: Why Frontier AI Still Makes Things Up, and What to Do About It",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/that-is-embarrassing-why-frontier-ai-still-makes-things-up-and-what-to-do-about-it/",
+        "summary": "The article discusses the problem of AI hallucinations, where models provide false or misleading information, and explores reasons behind this phenomenon and potential solutions.",
+        "why_it_matters": "Understanding and addressing AI hallucinations is crucial for building trust in AI systems and ensuring their safe and reliable deployment in various contexts."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "OpenAI bets on families as ChatGPT goes deeper into households",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+        "summary": "OpenAI is expanding ChatGPT's reach into households by hiring a product manager focused on creating experiences for families, caregivers, and older adults.",
+        "why_it_matters": "This move signifies OpenAI's strategy to integrate ChatGPT more deeply into family and household settings, potentially revolutionizing how people interact with AI in their daily lives."
+      }
+    ],
+    "industry_business": [],
+    "policy_society": []
+  },
+  "top_story": {
+    "title": "OpenAI bets on families as ChatGPT goes deeper into households",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+    "summary": "OpenAI is expanding ChatGPT's reach into households by hiring a product manager focused on creating experiences for families, caregivers, and older adults.",
+    "why_it_matters": "This development is significant as it indicates a major AI company's push into the consumer market, aiming to make AI assistants a staple in family and household environments."
+  }
+}
