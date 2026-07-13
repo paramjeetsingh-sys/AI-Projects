@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-13",
+  "total_articles": 3,
+  "headline": "New techniques and frameworks emerge for building more resilient and efficient AI applications",
+  "tldr": "Today's AI news highlights the importance of understanding different techniques for training AI models and building local-first applications. Two articles from Towards Data Science discuss the use of RAG vs fine-tuning and orchestrating multiple agents with Claude Code. Meanwhile, InfoQ AI/ML explores the AT Protocol for building more resilient local-first applications. These advancements have significant implications for the development of more efficient and robust AI systems.",
+  "categories": {
+    "new_models": [],
+    "research": [
+      {
+        "title": "RAG vs Fine-Tuning Explained: What They Actually Do and When to Use Each",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/rag-vs-fine-tuning-explained-what-they-actually-do-and-when-to-use-each/",
+        "summary": "This article explains the differences between RAG and fine-tuning techniques for training AI models, highlighting their respective use cases.",
+        "why_it_matters": "Understanding the strengths and weaknesses of different training techniques is crucial for developing effective AI models."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "How to Orchestrate 100+ Agents With Claude Code",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/how-to-orchestrate-100-agents-with-claude-code/",
+        "summary": "This article demonstrates how to use Claude Code to orchestrate multiple agents in parallel, enabling more efficient and scalable AI applications.",
+        "why_it_matters": "The ability to orchestrate multiple agents is essential for building complex AI systems that can handle large amounts of data and tasks."
+      }
+    ],
+    "industry_business": [],
+    "policy_society": []
+  },
+  "top_story": {
+    "title": "How to Build More Resilient Local-First Applications With AT Protocol Infrastructure",
+    "source": "InfoQ AI/ML",
+    "link": "https://www.infoq.com/news/2026/07/atproto-webapp/",
+    "summary": "This article discusses the AT Protocol as a framework for building local-first applications, emphasizing the importance of a local-first architecture for data synchronization and updates.",
+    "why_it_matters": "The development of local-first applications has significant implications for data ownership, security, and the future of distributed systems."
+  }
+}
