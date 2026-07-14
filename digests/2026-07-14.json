@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-14",
+  "total_articles": 12,
+  "headline": "Satya Nadella issues a warning to companies using AI, while Apple sues OpenAI over alleged trade secret theft",
+  "tldr": "Today's AI news is dominated by warnings and lawsuits, with Satya Nadella cautioning companies about the potential risks of AI and Apple suing OpenAI over alleged trade secret theft. Meanwhile, Anthropic is localizing its Claude pricing for India, and Waze is adding new AI-powered features. Researchers are also exploring new AI discoveries and warning about potential security threats.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Agentic RAG: Let the Agent Search",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/agentic-rag-let-the-agent-search/",
+        "summary": "A minimal OpenAI Agents SDK implementation where retrieval becomes a search-read-decide loop",
+        "why_it_matters": "This new model has the potential to improve the efficiency of AI agents in searching and decision-making"
+      }
+    ],
+    "research": [
+      {
+        "title": "What Anthropic’s latest AI discovery does—and doesn’t—show",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
+        "summary": "Anthropic's latest AI discovery has sparked debate about its implications and limitations",
+        "why_it_matters": "This research has significant implications for the development of AI and its potential applications"
+      },
+      {
+        "title": "Context Rot: Why Claude Code Sessions Decay, and How to Govern Them",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/governed-context-managing-context-rot-in-claude-code/",
+        "summary": "Long sessions in Claude Code can decay due to context rot, and researchers are exploring ways to govern and manage this issue",
+        "why_it_matters": "Understanding and addressing context rot is crucial for improving the performance and reliability of AI models like Claude Code"
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Waze adds new AI-powered features and customization updates",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/",
+        "summary": "Waze is integrating new AI-powered features and customization updates to improve user experience",
+        "why_it_matters": "These updates demonstrate the increasing importance of AI in enhancing user experience and competitiveness in the navigation and mapping industry"
+      },
+      {
+        "title": "Anthropic starts localizing Claude pricing for India, its biggest market after the US",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
+        "summary": "Anthropic is localizing its Claude pricing for India, its second-largest market after the US",
+        "why_it_matters": "This move reflects Anthropic's efforts to expand its global presence and adapt to local market conditions"
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Satya Nadella has issued a shocking warning to companies using AI",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
+        "summary": "Satya Nadella has warned companies about the potential risks and consequences of using AI",
+        "why_it_matters": "Nadella's warning highlights the need for companies to carefully consider the implications of AI adoption and develop strategies to mitigate potential risks"
+      },
+      {
+        "title": "Apple sues OpenAI after ex-engineer allegedly used bug to steal trade secrets",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets/",
+        "summary": "Apple is suing OpenAI over alleged trade secret theft by a former Apple engineer",
+        "why_it_matters": "This lawsuit highlights the importance of protecting intellectual property and trade secrets in the AI industry"
+      },
+      {
+        "title": "How DoorDash Built an AI Shopping Assistant That Doesn’t Rely on the LLM Alone",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/doordash-ai-ask-assistant/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "DoorDash has developed an AI-powered shopping assistant that combines LLMs with specialized AI agents and other technologies",
+        "why_it_matters": "This approach demonstrates the potential for AI to enhance customer experience and drive business growth in the e-commerce industry"
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "The US government warns that Russia state hackers are coming after your router",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/security/2026/07/the-us-government-warns-that-russia-state-hackers-are-coming-after-your-router/",
+        "summary": "The US government is warning about potential cyber threats from Russian state hackers targeting routers",
+        "why_it_matters": "This warning highlights the need for individuals and organizations to prioritize cybersecurity and take steps to protect themselves from potential threats"
+      },
+      {
+        "title": "Empowering India’s next generation of innovators with ATL Saathi",
+        "source": "Google DeepMind",
+        "link": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
+        "summary": "Google and AIM have launched ATL Saathi, a Gemini-powered AI tool to empower Indian educators in robotics labs",
+        "why_it_matters": "This initiative demonstrates the potential for AI to enhance education and drive innovation in emerging markets like India"
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Satya Nadella has issued a shocking warning to companies using AI",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
+    "summary": "Satya Nadella has warned companies about the potential risks and consequences of using AI",
+    "why_it_matters": "Nadella's warning highlights the need for companies to carefully consider the implications of AI adoption and develop strategies to mitigate potential risks"
+  }
+}
