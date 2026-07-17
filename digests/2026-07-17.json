@@ -1,0 +1,137 @@
+{
+  "date": "2026-07-17",
+  "total_articles": 19,
+  "headline": "Google Vids introduces personalized AI avatars, while OpenAI unveils GPT-Red for safer models and Moonshot's Kimi 3 is expected to close the gap with Anthropic's Opus 4.8",
+  "tldr": "Today's AI news is dominated by new model releases and updates, including Google Vids' personalized AI avatars and OpenAI's GPT-Red. Moonshot's upcoming Kimi 3 is expected to be a major competitor to Anthropic's Opus 4.8. Additionally, there are concerns about AI safety and regulation, with xAI suing users for creating child sex images and OpenAI making ChatGPT safer for teens. Researchers are also exploring new frontiers in AI, including visual AI and bioresilience.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Google Vids now lets you star in your own AI videos",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
+        "summary": "Google is adding personalized AI avatars to Vids that let users create videos starring a digital version of themselves.",
+        "why_it_matters": "This feature has the potential to revolutionize the way we create and consume video content, and could have significant implications for the entertainment and advertising industries."
+      },
+      {
+        "title": "Moonshot’s upcoming Kimi 3 is expected to close the gap with Anthropic’s Opus 4.8",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/",
+        "summary": "The FT reports Kimi K3 will be the largest open AI model from China, with a parameter count between 2 trillion and 3 trillion.",
+        "why_it_matters": "This could be a major development in the AI landscape, as Kimi 3 could potentially rival the capabilities of Anthropic's Opus 4.8 and change the dynamics of the AI market."
+      },
+      {
+        "title": "GPT-5.6 Sol vs Claude Fable 5: Benchmarks, Pricing & Hands-On",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/07/gpt-5-6-sol-vs-claude-fable-5/",
+        "summary": "GPT-5.6 Sol and Claude Fable 5 are currently fighting for the frontier-model crown.",
+        "why_it_matters": "This comparison of two leading AI models could help developers and researchers choose the best tool for their needs and understand the current state of the art in AI."
+      },
+      {
+        "title": "OpenAI unveils GPT-Red",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us/",
+        "summary": "OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to make its models safer.",
+        "why_it_matters": "GPT-Red could be an important tool for improving the safety and security of AI models, and its development could have significant implications for the future of AI research and development."
+      }
+    ],
+    "research": [
+      {
+        "title": "How a former DeepMind researcher raised at a $300M pre-seed valuation before launching a product",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/",
+        "summary": "Andrew Dai explains why he believes visual AI is one of the next major frontiers in artificial intelligence.",
+        "why_it_matters": "This article highlights the potential of visual AI and the importance of investing in research and development in this area."
+      },
+      {
+        "title": "Our approach to bioresilience",
+        "source": "Google DeepMind",
+        "link": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+        "summary": "Google DeepMind and Isomorphic Labs are sharing their joint approach to bioresilience and AI models.",
+        "why_it_matters": "This research could have significant implications for our understanding of the relationship between AI and biology, and could lead to new breakthroughs in fields such as medicine and biotechnology."
+      },
+      {
+        "title": "Context Engineering for RAG Question Parsing: From a Raw Question to Typed Fields That Steer Retrieval and Generation",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/context-engineering-for-rag-question-parsing-from-a-raw-question-to-typed-fields-that-steer-retrieval-and-generation/",
+        "summary": "Question parsing takes one messy string and writes four typed pieces, each read by a different downstream call.",
+        "why_it_matters": "This research could improve the accuracy and efficiency of question-answering systems, and could have significant implications for the development of more advanced AI models."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Yes, you can now order DoorDash from the command line",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/",
+        "summary": "DoorDash is opening a limited beta of dd-cli, a command-line tool that lets developers and AI agents search stores, build carts, and place orders from the terminal.",
+        "why_it_matters": "This feature could make it easier for developers to integrate DoorDash into their applications and workflows, and could have significant implications for the future of food delivery and e-commerce."
+      },
+      {
+        "title": "How to Get the Most Out of Claude Fable 5",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/how-to-get-the-most-out-of-claude-fable-5/",
+        "summary": "Maximize your Claude Fable 5 usage.",
+        "why_it_matters": "This article could help developers and researchers get the most out of Claude Fable 5, and could have significant implications for the development of more advanced AI models."
+      },
+      {
+        "title": "NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
+        "summary": "NVIDIA Nemotron 3 Embed has achieved the top rank on the RTEB leaderboard.",
+        "why_it_matters": "This could be an important development in the field of natural language processing, and could have significant implications for the development of more advanced AI models."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "How a former DeepMind researcher raised at a $300M pre-seed valuation before launching a product",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/",
+        "summary": "Andrew Dai explains why he believes visual AI is one of the next major frontiers in artificial intelligence.",
+        "why_it_matters": "This article highlights the potential of visual AI and the importance of investing in research and development in this area."
+      },
+      {
+        "title": "Why AMI Labs’ Alexandre LeBrun won’t call his AI ‘AGI’ or ‘superintelligence’",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/16/why-ami-labs-alexandre-lebrun-wont-call-his-ai-agi-or-superintelligence/",
+        "summary": "Alexandre LeBrun, CEO of Yann LeCun’s world model startup, AMI Labs, dismisses the word.",
+        "why_it_matters": "This article could provide insight into the current state of the AI industry and the challenges of developing more advanced AI models."
+      },
+      {
+        "title": "QCon AI Boston: Production AI Moves Beyond Prompts to Platforms, Harnesses, and Evals",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/production-ai-platforms-evals/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "QCon AI Boston 2026 focused on the operational challenges of deploying AI agents.",
+        "why_it_matters": "This conference could provide important insights into the current state of the AI industry and the challenges of deploying AI models in production environments."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "xAI can’t deny Grok makes CSAM anymore. So it’s suing users.",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users/",
+        "summary": "Elon Musk's xAI files first lawsuit against Grok user accused of making child sex images.",
+        "why_it_matters": "This lawsuit could have significant implications for the regulation of AI models and the responsibility of developers and users for the content generated by these models."
+      },
+      {
+        "title": "Why teens deserve access to safe AI",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+        "summary": "Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships.",
+        "why_it_matters": "This article could provide insight into the importance of ensuring that AI models are safe and accessible for all users, including teens."
+      },
+      {
+        "title": "AI Agents with Cloud Credentials Are Outrunning Billing Guardrails Built for Human-Speed Mistakes",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/ai-agents-billing-guardrails/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "A three-person agency received a $14,000 AWS bill in one day after attackers extracted static access keys and burned Claude invocations on Bedrock.",
+        "why_it_matters": "This article highlights the importance of ensuring that AI models are secure and that developers and users are aware of the potential risks and challenges associated with these models."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Google Vids now lets you star in your own AI videos",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
+    "summary": "Google is adding personalized AI avatars to Vids that let users create videos starring a digital version of themselves.",
+    "why_it_matters": "This feature has the potential to revolutionize the way we create and consume video content, and could have significant implications for the entertainment and advertising industries."
+  }
+}
