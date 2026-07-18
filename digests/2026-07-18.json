@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-18",
+  "total_articles": 18,
+  "headline": "Apple's lawsuit against OpenAI could disrupt its IPO plans, while Databricks hits $188B valuation as AI's favorite second act",
+  "tldr": "Today's AI news is dominated by Apple's lawsuit against OpenAI, which could impact its IPO plans. Meanwhile, Databricks has reached a $188B valuation, solidifying its position as a leading AI company. Other notable stories include Vertu's luxury AI-powered foldable device, Agility Robotics' new training center, and Patreon's efforts to block AI bots from scraping creator content. Researchers have also made significant advancements in AI, including the development of a practical AI scorecard and new methods for fine-tuning video and image models.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "NVIDIA Vera Rubin Maximizes Intelligence per Dollar for Post-Training Workloads",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/nvidia-vera-rubin-post-training-intelligence-per-dollar/",
+        "summary": "NVIDIA Vera Rubin is designed to maximize intelligence per dollar for post-training workloads, a key metric for agentic AI. It achieves the lowest cost per token through extreme codesign.",
+        "why_it_matters": "This development is significant for the AI industry as it highlights the importance of optimizing post-training workloads for agentic AI, which is a growing area of research."
+      },
+      {
+        "title": "Vertu wants executives to pay $6,880 for an AI agent",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs/",
+        "summary": "Vertu is offering a luxury AI-powered foldable device for $6,880, targeting executives. The device features advanced AI capabilities, including AI workflows and security.",
+        "why_it_matters": "This product launch is notable as it represents a new trend in the AI industry, where luxury brands are incorporating AI into their high-end devices to appeal to executives and other high-end consumers."
+      }
+    ],
+    "research": [
+      {
+        "title": "A scorecard for the AI age",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/a-scorecard-for-the-ai-age",
+        "summary": "OpenAI has introduced a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute. This scorecard is designed to help organizations evaluate the effectiveness of their AI systems.",
+        "why_it_matters": "The development of a practical AI scorecard is significant as it provides organizations with a framework for evaluating the effectiveness of their AI systems, which is essential for making informed decisions about AI investments."
+      },
+      {
+        "title": "Context Engineering Isn’t Enough — A Loop Engineering Experiment With No LLM Inside the Loop",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/context-engineering-isnt-enough-a-loop-engineering-experiment-with-no-llm-inside-the-loop",
+        "summary": "Researchers have conducted an experiment to test the effectiveness of loop engineering without using a large language model (LLM). The results show that loop engineering can be effective even without an LLM.",
+        "why_it_matters": "This research is notable as it highlights the potential of loop engineering as a technique for improving AI systems, even in the absence of an LLM."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
+        "summary": "Hugging Face has announced a new feature that allows users to fine-tune video and image models at scale using NVIDIA NeMo Automodel and 🤗 Diffusers. This feature is designed to make it easier for developers to train and deploy AI models.",
+        "why_it_matters": "This update is significant as it provides developers with a new tool for fine-tuning AI models, which is essential for improving the accuracy and effectiveness of AI systems."
+      },
+      {
+        "title": "Patreon stops asking AI bots not to scrape — and starts blocking them",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/",
+        "summary": "Patreon has announced that it will no longer rely on robots.txt to prevent AI bots from scraping creator content. Instead, the company will use Cloudflare to block bots that train AI models on creator content without permission.",
+        "why_it_matters": "This update is notable as it highlights the growing concern about AI bots scraping creator content without permission, and the need for companies to take proactive measures to protect their users' intellectual property."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Databricks hits $188B valuation, extending its run as AI’s favorite second act",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+        "summary": "Databricks has reached a $188B valuation, solidifying its position as a leading AI company. The company has remade its image as an AI company and has published research on the cost savings of open weight AI models for coding.",
+        "why_it_matters": "This development is significant as it highlights the growing importance of AI in the tech industry, and the potential for companies to achieve high valuations by focusing on AI."
+      },
+      {
+        "title": "Agility Robotics plants its flag in Tesla’s backyard",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/",
+        "summary": "Agility Robotics has announced that it will open a new training center for its Digit robots in Fremont, California, which is also the location of Tesla's headquarters.",
+        "why_it_matters": "This development is notable as it highlights the growing competition in the robotics industry, and the potential for companies to establish themselves as leaders in the field by investing in research and development."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "How Apple’s big lawsuit could disrupt OpenAI’s IPO plans",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
+        "summary": "Apple has filed a trade secrets lawsuit against OpenAI, which could disrupt the company's IPO plans. The lawsuit alleges that OpenAI has misappropriated Apple's trade secrets and has hired over 400 former Apple employees.",
+        "why_it_matters": "This lawsuit is significant as it highlights the potential risks and challenges associated with AI development, including the potential for trade secret misappropriation and the need for companies to protect their intellectual property."
+      },
+      {
+        "title": "Apple’s lawsuit couldn’t come at a worse time for OpenAI",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai/",
+        "summary": "The timing of Apple's lawsuit against OpenAI is particularly unfortunate, as it comes at a time when OpenAI is preparing for its IPO. The lawsuit could potentially disrupt OpenAI's plans and impact its ability to raise capital.",
+        "why_it_matters": "This development is notable as it highlights the potential risks and challenges associated with AI development, including the potential for lawsuits and the need for companies to protect their intellectual property."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Apple’s lawsuit couldn’t come at a worse time for OpenAI",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai/",
+    "summary": "The timing of Apple's lawsuit against OpenAI is particularly unfortunate, as it comes at a time when OpenAI is preparing for its IPO. The lawsuit could potentially disrupt OpenAI's plans and impact its ability to raise capital.",
+    "why_it_matters": "This development is notable as it highlights the potential risks and challenges associated with AI development, including the potential for lawsuits and the need for companies to protect their intellectual property."
+  }
+}
