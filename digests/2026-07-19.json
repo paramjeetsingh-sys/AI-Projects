@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-19",
+  "total_articles": 2,
+  "headline": "AI is being piloted for insurance-coverage decisions and a new knowledge engine is introduced for compiling business context into structured data for AI agents",
+  "tldr": "Today in AI, the government is exploring the use of AI in insurance-coverage decisions, while Pinecone introduces a new knowledge engine for transforming enterprise data into a structured layer for AI agents. These developments highlight the growing role of AI in healthcare and enterprise data management. As AI continues to advance, its applications in various industries are becoming more pronounced.",
+  "categories": {
+    "new_models": [],
+    "research": [],
+    "features_updates": [
+      {
+        "title": "Pinecone Introduces Nexus Engine for Compiling Business Context into Structured Data for AI Agents",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/pinecon-nexus-knowledge-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Pinecone Nexus is a knowledge engine for AI agents that transforms enterprise data into a structured layer agents can query directly, enabling teams to ingest and curate business context once for all, making it reusable across agents and reducing token costs while improving efficiency",
+        "why_it_matters": "This matters because it showcases the potential of AI in streamlining enterprise data management and improving the efficiency of AI agents, which can have significant implications for businesses looking to leverage AI for decision-making"
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Will AI fix prior authorization—or make it worse?",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse/",
+        "summary": "The government is piloting a program that uses AI for insurance-coverage decisions, aiming to improve the prior authorization process",
+        "why_it_matters": "This matters because it highlights the growing interest in using AI to improve healthcare administration and decision-making, which can have significant implications for the healthcare industry and patients alike"
+      }
+    ],
+    "policy_society": []
+  },
+  "top_story": {
+    "title": "Will AI fix prior authorization—or make it worse?",
+    "source": "Ars Technica",
+    "link": "https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse/",
+    "summary": "The government is piloting a program that uses AI for insurance-coverage decisions, aiming to improve the prior authorization process",
+    "why_it_matters": "This matters because it highlights the growing interest in using AI to improve healthcare administration and decision-making, which can have significant implications for the healthcare industry and patients alike"
+  }
+}
