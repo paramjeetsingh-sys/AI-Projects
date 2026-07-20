@@ -1,0 +1,81 @@
+{
+  "date": "2026-07-20",
+  "total_articles": 8,
+  "headline": "Netflix introduces GenPage, a single GenAI model for building personalized homepages, while Google's AlphaEvolve reaches general availability with evolutionary code optimization as a service.",
+  "tldr": "Today in AI, several significant developments were announced, including the introduction of GenPage by Netflix and the general availability of Google's AlphaEvolve. Researchers also highlighted the potential biases of AI in hiring and the importance of understanding backpropagation in neural networks. Additionally, Thinking Machines Lab unveiled Inkling, a general-purpose open-weights foundation model. These advancements demonstrate the rapid progress being made in the field of AI.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Thinking Machines Lab Unveils Inkling",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/07/thinking-machines-inkling/",
+        "summary": "Thinking Machines Lab has unveiled Inkling, its first general-purpose open-weights foundation model, designed as a customizable foundation for various applications.",
+        "why_it_matters": "Inkling's introduction matters because it provides a new foundation model that can be customized for various applications, potentially leading to more efficient and effective AI development."
+      },
+      {
+        "title": "Netflix Introduces GenPage",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/netflix-llm-homepage-generation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Netflix has developed GenPage, a generative AI system that replaces traditional multi-stage recommendation pipelines by directly generating personalized user homepages.",
+        "why_it_matters": "GenPage's introduction matters because it demonstrates the potential of generative AI in personalizing user experiences, which can lead to improved user engagement and satisfaction."
+      }
+    ],
+    "research": [
+      {
+        "title": "AI is More Likely to Form Biases When Hiring",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
+        "summary": "Researchers have found that AI is more likely to form biases when hiring, as it can pick up human biases from training data and develop its own biases.",
+        "why_it_matters": "This research matters because it highlights the potential risks of using AI in hiring processes and the need for developers to address these biases to ensure fair and unbiased decision-making."
+      },
+      {
+        "title": "Backpropagation Explained for Beginners",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/backpropagation-explained-for-beginners-part-1-building-the-intuition/",
+        "summary": "The article provides an explanation of backpropagation for beginners, helping to build intuition about how neural networks learn.",
+        "why_it_matters": "Understanding backpropagation is essential for developing and working with neural networks, and this article provides a valuable resource for beginners in the field."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Google's AlphaEvolve Reaches General Availability",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/alphaevolve-generally-available/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Google's AlphaEvolve has reached general availability, providing evolutionary code optimization as a service and allowing clients to optimize their code without leaving their infrastructure.",
+        "why_it_matters": "AlphaEvolve's general availability matters because it provides a new tool for developers to optimize their code, potentially leading to improved performance and efficiency."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Apple Lawsuit May Derail OpenAI's Hardware Plans",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/",
+        "summary": "An Apple lawsuit may potentially derail OpenAI's plans to get into hardware, as the company discusses the implications of the lawsuit on OpenAI's future plans.",
+        "why_it_matters": "This lawsuit matters because it could impact OpenAI's ability to expand into the hardware market, potentially affecting the company's growth and development."
+      },
+      {
+        "title": "Your AI Agent Passed Every Eval, But Finance Still Killed It",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/your-ai-agent-passed-every-eval-finance-still-killed-it/",
+        "summary": "The article discusses the challenges of deploying AI agents in production, highlighting the importance of considering financial metrics and the potential for AI agents to be killed despite passing evaluations.",
+        "why_it_matters": "This article matters because it highlights the need for developers to consider the financial implications of deploying AI agents and to prioritize metrics that predict survival in production."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Loop Engineering for RAG Question Parsing",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/loop-engineering-for-rag-question-parsing-the-small-loop-that-runs-before-retrieval/",
+        "summary": "The article discusses loop engineering for RAG question parsing, highlighting the importance of designing small loops that run before retrieval to improve question parsing.",
+        "why_it_matters": "This research matters because it contributes to the development of more efficient and effective question parsing systems, which can have significant impacts on various applications, including search engines and virtual assistants."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Netflix Introduces GenPage",
+    "source": "InfoQ AI/ML",
+    "link": "https://www.infoq.com/news/2026/07/netflix-llm-homepage-generation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "summary": "Netflix has developed GenPage, a generative AI system that replaces traditional multi-stage recommendation pipelines by directly generating personalized user homepages.",
+    "why_it_matters": "GenPage's introduction matters because it demonstrates the potential of generative AI in personalizing user experiences, which can lead to improved user engagement and satisfaction."
+  }
+}
