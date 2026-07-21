@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-21",
+  "total_articles": 16,
+  "headline": "Anthropic's $1.5B copyright settlement is approved, while Google works on a new AI chip for Gemini and OpenAI expresses concerns over open-weight models",
+  "tldr": "Today's AI news is dominated by significant developments in AI regulation, new model releases, and advancements in AI chips. Anthropic's landmark copyright settlement has been approved, and Google is working on a new AI chip to make Gemini more efficient. Meanwhile, OpenAI has expressed concerns over open-weight models, and there are updates on various AI tools and features. The AI landscape is rapidly evolving, with new models, products, and research findings being announced regularly.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Introducing Cosmos 3 Edge",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/nvidia/cosmos3edge",
+        "summary": "Hugging Face introduces Cosmos 3 Edge, a new AI model",
+        "why_it_matters": "This new model release highlights the rapid advancements in AI technology and the increasing importance of edge computing in AI applications"
+      },
+      {
+        "title": "AWS Releases Loom, an Open-Source Reference Platform for Governing AI Agents at Enterprise Scale",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/loom-aws-agent-platform/",
+        "summary": "AWS releases Loom, an open-source platform for governing AI agents",
+        "why_it_matters": "This release demonstrates AWS's commitment to providing scalable and secure AI solutions for enterprises, and highlights the growing need for effective AI governance"
+      }
+    ],
+    "research": [
+      {
+        "title": "Safety and alignment in an era of long-horizon models",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/safety-alignment-long-horizon-models",
+        "summary": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks and improved safeguards",
+        "why_it_matters": "This research highlights the importance of safety and alignment in AI models, particularly as they become more complex and long-running"
+      },
+      {
+        "title": "Loop Engineering with Adaptive Parsing in Action: Parsing Flat Tables with Azure and Figures with a Vision LLM",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/loop-engineering-with-adaptive-parsing-in-action-parsing-flat-tables-with-azure-and-figures-with-a-vision-llm",
+        "summary": "Researchers demonstrate the application of loop engineering with adaptive parsing in action",
+        "why_it_matters": "This research showcases the potential of adaptive parsing in improving the efficiency and accuracy of AI models"
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Google is working on a new AI chip designed to make Gemini more efficient",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/",
+        "summary": "Google is developing a new AI chip to improve the efficiency of its Gemini models",
+        "why_it_matters": "This update highlights Google's ongoing efforts to improve the performance and efficiency of its AI models, and demonstrates the importance of specialized AI hardware"
+      },
+      {
+        "title": "GitLab 19.2 Puts AI Agents to Work on the Security Backlog",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/gitlab-19-2-ai-agents/",
+        "summary": "GitLab releases version 19.2, featuring AI agents for security and review work",
+        "why_it_matters": "This update demonstrates the growing adoption of AI in software development and security, and highlights the potential of AI agents in improving development efficiency"
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Anthropic’s landmark $1.5B copyright settlement is approved",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/",
+        "summary": "Anthropic's $1.5B copyright settlement has been approved, resolving one case but leaving broader issues unresolved",
+        "why_it_matters": "This settlement highlights the ongoing challenges and uncertainties surrounding AI and copyright law, and demonstrates the need for clearer regulations and guidelines"
+      },
+      {
+        "title": "Bristol Myers Squibb Building Life Science Industry’s Most Advanced AI Factory on NVIDIA Vera Rubin",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/bristol-myers-squibb-building-life-science-industrys-most-advanced-ai-factory-on-nvidia-vera-rubin/",
+        "summary": "Bristol Myers Squibb is building an advanced AI factory using NVIDIA Vera Rubin",
+        "why_it_matters": "This partnership demonstrates the growing adoption of AI in the life sciences industry, and highlights the potential of AI in driving innovation and discovery"
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "OpenAI is scared of open-weight models. Should the US be?",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/",
+        "summary": "OpenAI expresses concerns over open-weight models, highlighting the challenges of regulating AI",
+        "why_it_matters": "This article highlights the ongoing debates and concerns surrounding AI regulation, and demonstrates the need for clearer guidelines and policies to ensure the safe and responsible development of AI"
+      },
+      {
+        "title": "China’s AI models have Trump’s AI world at war with itself",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/",
+        "summary": "China's AI models are causing tensions and divisions within the US AI community",
+        "why_it_matters": "This article highlights the geopolitical implications of AI development, and demonstrates the need for international cooperation and dialogue to ensure the safe and responsible development of AI"
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Anthropic’s landmark $1.5B copyright settlement is approved",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/",
+    "summary": "Anthropic's $1.5B copyright settlement has been approved, resolving one case but leaving broader issues unresolved",
+    "why_it_matters": "This settlement highlights the ongoing challenges and uncertainties surrounding AI and copyright law, and demonstrates the need for clearer regulations and guidelines"
+  }
+}
