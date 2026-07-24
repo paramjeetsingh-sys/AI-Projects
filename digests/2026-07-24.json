@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-24",
+  "total_articles": 16,
+  "headline": "OpenAI makes ChatGPT Health available to all US users, while Anthropic updates Claude voice mode with more capable models",
+  "tldr": "Today's AI news is dominated by updates from major AI players, including OpenAI and Anthropic, with new features and models being released. Additionally, there are concerns about the impact of AI guardrails on cybersecurity researchers and the potential for AI-driven spear phishing. Experts are also weighing in on the potential risks and benefits of AI, including the need for more robust security measures and the potential for AI to improve healthcare outcomes.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Runway launches AI model router as generative media gets crowded",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/",
+        "summary": "Runway has launched a new AI model router that automatically selects the best image, video, or audio generation model for a request based on quality, speed, or cost.",
+        "why_it_matters": "This launch highlights the growing demand for generative media and the need for more efficient and effective AI models to support this growth."
+      },
+      {
+        "title": "AI chip startup Etched defies skeptics, hits $10.3B valuation from big-name investors",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
+        "summary": "Etched, a startup founded by three Harvard dropouts, has created new chips and memory components that speed up inference on any AI model without requiring GPUs.",
+        "why_it_matters": "This valuation highlights the growing interest in AI hardware and the potential for new innovations to disrupt the industry."
+      }
+    ],
+    "research": [
+      {
+        "title": "Prompt Compression Techniques: How to Reduce LLM Costs Without Losing Important Context",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/07/prompt-compression-techniques-guide/",
+        "summary": "Large language models often receive more information than they need, increasing token usage, cost, and response time. Prompt compression techniques can help reduce these costs without losing important context.",
+        "why_it_matters": "This research highlights the need for more efficient and effective ways to interact with large language models, and the potential for prompt compression techniques to improve performance and reduce costs."
+      },
+      {
+        "title": "Most RAG Hallucinations Are Extraction Errors: Seven Patterns for a Typed Generation Contract",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/most-rag-hallucinations-are-extraction-errors-seven-patterns-for-a-typed-generation-contract/",
+        "summary": "Enterprise Document Intelligence has found that most RAG hallucinations are actually extraction errors, and has developed seven typed-contract patterns to keep generation models honest.",
+        "why_it_matters": "This research highlights the need for more accurate and reliable generation models, and the potential for typed-contract patterns to improve performance and reduce errors."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Anthropic updates Claude voice mode with more capable models",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
+        "summary": "Anthropic has updated its Claude voice mode with more capable models, allowing users to reschedule meetings or draft emails.",
+        "why_it_matters": "This update highlights the growing demand for more advanced and capable voice models, and the potential for these models to improve user experience and productivity."
+      },
+      {
+        "title": "OpenAI makes ChatGPT Health available to all US users",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/",
+        "summary": "OpenAI has made its ChatGPT Health feature available to all US users, allowing them to integrate their personal health data from services like Apple Health, Function, and MyFitnessPal.",
+        "why_it_matters": "This launch highlights the growing interest in AI-powered healthcare and the potential for these models to improve health outcomes and user experience."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
+        "summary": "AegisAI, a startup founded by former Google security executives, has raised $36M to develop AI-powered solutions to stop AI-driven spear phishing.",
+        "why_it_matters": "This funding highlights the growing concern about AI-driven spear phishing and the need for more effective solutions to prevent these types of attacks."
+      },
+      {
+        "title": "Expedia Uses AI Driven Service Telemetry Analyzer to Accelerate Incident Investigation",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/07/expedia-ai-observability-star/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Expedia Group has introduced an AI-assisted observability platform that helps engineers investigate production incidents using service telemetry and LLMs.",
+        "why_it_matters": "This launch highlights the growing interest in AI-powered observability and the potential for these models to improve incident investigation and resolution times."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "How AI guardrails are impeding the work of offensive cybersecurity researchers",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
+        "summary": "Cybersecurity researchers are finding that AI guardrails are impeding their work, making it more difficult to identify and exploit vulnerabilities.",
+        "why_it_matters": "This article highlights the need for more nuanced and effective AI guardrails that balance security with the need for researchers to test and improve AI systems."
+      },
+      {
+        "title": "AI arms race in line for a reckoning after OpenAI hacking incident",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident/",
+        "summary": "The AI arms race is facing a reckoning after a hacking incident at OpenAI, highlighting the need for more robust security measures and regulations.",
+        "why_it_matters": "This article highlights the growing concern about AI security and the need for more effective regulations and measures to prevent similar incidents in the future."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "OpenAI makes ChatGPT Health available to all US users",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/",
+    "summary": "OpenAI has made its ChatGPT Health feature available to all US users, allowing them to integrate their personal health data from services like Apple Health, Function, and MyFitnessPal.",
+    "why_it_matters": "This launch highlights the growing interest in AI-powered healthcare and the potential for these models to improve health outcomes and user experience."
+  }
+}
