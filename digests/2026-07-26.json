@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-26",
+  "total_articles": 2,
+  "headline": "AI Red-Teaming and Vector Search Optimization Take Center Stage in Today's AI News",
+  "tldr": "Today's AI news highlights the importance of AI red-teaming and the need for optimizing vector search. A recent breach using an autonomous AI agent underscores the urgency of red-teaming, while a new guide provides insights into optimizing vector search when RAM gets too expensive. These developments have significant implications for the security and efficiency of AI systems.",
+  "categories": {
+    "new_models": [],
+    "research": [
+      {
+        "title": "How to Optimize Vector Search When RAM Gets Too Expensive: On-Disk vs. In-Memory ANN Indexes",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/optimizing-vector-search-on-disk-vs-in-memory-ann-indexes-when-ram-gets-too-expensive/",
+        "summary": "This article discusses the trade-offs of using on-disk vs. in-memory ANN indexes for vector search, providing insights into optimizing vector search when RAM gets too expensive.",
+        "why_it_matters": "This research matters because it helps developers and engineers architect cost-effective infrastructure for vector search, navigating the latency and storage trade-offs of different indexing techniques."
+      }
+    ],
+    "features_updates": [],
+    "industry_business": [],
+    "policy_society": [
+      {
+        "title": "A Complete Guide to AI Red-Teaming",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/07/guide-to-ai-red-teaming/",
+        "summary": "This article provides a guide to AI red-teaming, highlighting the importance of testing AI systems for vulnerabilities and discussing a recent breach where an autonomous AI agent exploited an old SQL injection flaw.",
+        "why_it_matters": "This guide matters because it underscores the need for AI red-teaming, emphasizing the potential risks and consequences of not testing AI systems for vulnerabilities, and providing a resource for developers and organizations to improve their AI security."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "A Complete Guide to AI Red-Teaming",
+    "source": "Analytics Vidhya",
+    "link": "https://www.analyticsvidhya.com/blog/2026/07/guide-to-ai-red-teaming/",
+    "summary": "This article provides a guide to AI red-teaming, highlighting the importance of testing AI systems for vulnerabilities and discussing a recent breach where an autonomous AI agent exploited an old SQL injection flaw.",
+    "why_it_matters": "This guide matters because it underscores the need for AI red-teaming, emphasizing the potential risks and consequences of not testing AI systems for vulnerabilities, and providing a resource for developers and organizations to improve their AI security."
+  }
+}
