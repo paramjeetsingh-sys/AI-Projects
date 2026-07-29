@@ -1,0 +1,81 @@
+{
+  "date": "2026-07-29",
+  "total_articles": 9,
+  "headline": "Cyera agrees to acquire Oasis Security for $1B to safeguard AI agents, while OpenAI's hack into Hugging Face raises concerns over AI security",
+  "tldr": "Today's AI news is dominated by a major acquisition in the AI security space, as well as concerns over the security of AI models after OpenAI's hack into Hugging Face. Researchers are also exploring new applications of AI, including scientific computing and geospatial inference. Additionally, there are updates on the cost of running local language models and the development of modern AI agents.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "LFM2.5-Encoders for Fast Long-Context Inference on CPU",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
+        "summary": "Hugging Face introduces LFM2.5-Encoders, a new model for fast long-context inference on CPU.",
+        "why_it_matters": "This development matters because it enables faster and more efficient processing of long-context data, which is crucial for many AI applications."
+      },
+      {
+        "title": "The OlmoEarth Platform: Geospatial inference at planetary scale",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
+        "summary": "Hugging Face announces the OlmoEarth Platform, a new platform for geospatial inference at planetary scale.",
+        "why_it_matters": "This platform matters because it enables large-scale geospatial analysis and inference, which has numerous applications in fields such as environmental monitoring and urban planning."
+      }
+    ],
+    "research": [
+      {
+        "title": "Scientific computing in the age of agentic AI",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/scientific-computing-agentic-ai",
+        "summary": "OpenAI publishes a new field report on the use of AI coding agents in scientific computing, accelerating software development and discovery in genomics and beyond.",
+        "why_it_matters": "This research matters because it highlights the potential of AI to accelerate scientific progress and improve the efficiency of scientific computing."
+      },
+      {
+        "title": "How Much Does a Local LLM Actually Cost to Run? I Measured Every Watt on Apple Silicon",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/how-much-does-a-local-llm-actually-cost-to-run-i-measured-every-watt-on-apple-silicon/",
+        "summary": "A new study measures the energy consumption of running local language models on Apple Silicon, providing insights into the cost of running these models.",
+        "why_it_matters": "This research matters because it provides valuable information for developers and users of local language models, helping them to understand the energy consumption and costs associated with running these models."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Build AI Anywhere With NVIDIA Jetson",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/build-ai-with-nvidia-jetson/",
+        "summary": "NVIDIA announces the NVIDIA Jetson, a powerful and compact compute platform for building AI applications anywhere.",
+        "why_it_matters": "This update matters because it provides developers with a new and powerful tool for building AI applications, enabling them to create more efficient and effective models."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/",
+        "summary": "Cyera agrees to acquire Oasis Security for $1B, aiming to safeguard the growing number of AI agents.",
+        "why_it_matters": "This acquisition matters because it highlights the growing importance of AI security and the need for companies to invest in safeguarding their AI systems."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "The Download: OpenAI’s predictable hack, and an AI stock sell-off",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/07/28/1140868/the-download-openai-hack-ai-stock-sell-off/",
+        "summary": "A recent hack into Hugging Face by OpenAI raises concerns over the security of AI models and the potential risks associated with their use.",
+        "why_it_matters": "This incident matters because it highlights the potential risks and vulnerabilities associated with AI models and the need for companies to prioritize their security and safety."
+      },
+      {
+        "title": "We now have a better understanding how OpenAI hacked into Hugging Face",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story/",
+        "summary": "A recent article provides a detailed analysis of the hack into Hugging Face by OpenAI, highlighting the vulnerabilities and risks associated with AI models.",
+        "why_it_matters": "This analysis matters because it provides valuable insights into the potential risks and vulnerabilities associated with AI models and the need for companies to prioritize their security and safety."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/",
+    "summary": "Cyera agrees to acquire Oasis Security for $1B, aiming to safeguard the growing number of AI agents.",
+    "why_it_matters": "This acquisition matters because it highlights the growing importance of AI security and the need for companies to invest in safeguarding their AI systems."
+  }
+}
