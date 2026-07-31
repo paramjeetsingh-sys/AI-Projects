@@ -1,0 +1,102 @@
+{
+  "date": "2026-07-31",
+  "total_articles": 19,
+  "headline": "A fundamental flaw leaves large language models vulnerable to attack, while Anthropic's AI models breached three companies during security tests",
+  "tldr": "Today's AI news highlights the vulnerability of large language models to attacks, with a fundamental flaw making them impossible to secure fully. Meanwhile, Anthropic's AI models breached three companies during security tests, and Google fixed more Chrome bugs in June than over the past two years thanks to AI. Okta acquired AI security startup Permiso for about $200M, and OpenAI shared its safety, security, transparency, and provenance practices for responsible AI governance in Europe.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Advancing the price-performance frontier with GPT-5.6",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+        "summary": "OpenAI announces lower GPT-5.6 pricing for Luna and Terra, making it more efficient for enterprises to deploy AI workflows at scale",
+        "why_it_matters": "This development matters because it showcases OpenAI's commitment to making AI more accessible and affordable for businesses, which can lead to increased adoption and innovation"
+      },
+      {
+        "title": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",
+        "source": "Google DeepMind",
+        "link": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
+        "summary": "Google DeepMind introduces Gemini Robotics ER 2, a system that enables robots to reason, collaborate, and solve real-world tasks",
+        "why_it_matters": "This innovation matters because it demonstrates the potential of AI to enhance robotics and automation, leading to increased efficiency and productivity in various industries"
+      },
+      {
+        "title": "July 2026 AI Releases: A Timeline of Frontier Model Shifts",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/07/july-2026-ai-models-releases/",
+        "summary": "Analytics Vidhya provides an overview of the recent AI model releases, highlighting the busiest month for frontier model releases",
+        "why_it_matters": "This article matters because it gives insight into the rapid advancements in AI research and development, which can lead to breakthroughs in various applications"
+      }
+    ],
+    "research": [
+      {
+        "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
+        "summary": "Researchers argue that a fundamental flaw in large language models makes them impossible to secure fully against hacks",
+        "why_it_matters": "This research matters because it highlights the significant security risks associated with LLMs and the need for developers to prioritize security and safety in AI development"
+      },
+      {
+        "title": "How to Decode the Temperature Parameter in LLMs",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/decoding-the-temperature-parameter-in-llms/",
+        "summary": "The article explains the concept of the temperature parameter in LLMs and its relation to statistical physics",
+        "why_it_matters": "This explanation matters because it provides insight into the inner workings of LLMs and can help developers and researchers better understand and improve these models"
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/",
+        "summary": "Google announces that it fixed more Chrome bugs in June than over the past two years, thanks to the use of AI tools",
+        "why_it_matters": "This development matters because it demonstrates the potential of AI to improve software development and maintenance, leading to more secure and reliable products"
+      },
+      {
+        "title": "Claude Code CLI Commands I Wish I Had Known Sooner",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/07/hidden-claude-code-cli-commands/",
+        "summary": "The article shares useful CLI commands for Claude Code that can improve workflow and productivity",
+        "why_it_matters": "This information matters because it can help users of Claude Code to work more efficiently and effectively, leading to better outcomes and increased adoption"
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Okta buys AI security startup Permiso — source says for about $200M",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m/",
+        "summary": "Okta acquires AI security startup Permiso for about $200M, expanding its identity threat detection capabilities",
+        "why_it_matters": "This acquisition matters because it highlights the growing importance of AI in cybersecurity and the need for companies to invest in AI-powered security solutions"
+      },
+      {
+        "title": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares/",
+        "summary": "The AI hedge fund Situational Awareness may have sold its public portfolio, but it still holds shares in Anthropic",
+        "why_it_matters": "This news matters because it provides insight into the investment strategies of AI-powered hedge funds and their potential impact on the market"
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Judge says Trump admin still lacks evidence for Anthropic ‘supply-chain risk’ label",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label/",
+        "summary": "A federal judge rules that the Trump administration lacks evidence to justify labeling Anthropic a supply-chain risk",
+        "why_it_matters": "This ruling matters because it highlights the ongoing debate about AI regulation and the need for clear evidence-based policies"
+      },
+      {
+        "title": "Advancing responsible AI across Europe",
+        "source": "OpenAI Blog",
+        "link": "https://openai.com/index/advancing-responsible-ai-across-europe",
+        "summary": "OpenAI shares its safety, security, transparency, and provenance practices for responsible AI governance in Europe",
+        "why_it_matters": "This initiative matters because it demonstrates OpenAI's commitment to responsible AI development and deployment, which is essential for building trust and ensuring the benefits of AI are realized"
+      }
+    ]
+  },
+  "top_story": {
+    "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+    "source": "MIT Technology Review",
+    "link": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
+    "summary": "Researchers argue that a fundamental flaw in large language models makes them impossible to secure fully against hacks",
+    "why_it_matters": "This research matters because it highlights the significant security risks associated with LLMs and the need for developers to prioritize security and safety in AI development"
+  }
+}
