@@ -1,0 +1,52 @@
+{
+  "date": "2026-08-02",
+  "total_articles": 4,
+  "headline": "YouTuber Hank Green sparks conversation on unhealthy AI usage, while OpenAI's CEO Sam Altman explores parenting via ChatGPT",
+  "tldr": "Today's AI news highlights the potential risks and benefits of AI integration in daily life, with discussions on AI usage, parenting, and advancements in vector databases and hybrid LLM applications. YouTuber Hank Green shared concerns about his AI usage, while OpenAI's CEO Sam Altman showcased a unique use case for ChatGPT. Meanwhile, new guides and patterns for AI development emerged, focusing on vector databases and workflow integration.",
+  "categories": {
+    "new_models": [],
+    "research": [
+      {
+        "title": "Put the Agent Inside the Workflow",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/put-the-agent-inside-the-workflow/",
+        "summary": "A hybrid LLM application pattern combines a predefined workflow with adaptive agent behavior, enabling more efficient and effective AI integration in various tasks.",
+        "why_it_matters": "This research matters because it introduces a novel approach to LLM application, potentially leading to more streamlined and productive AI workflows."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "LanceDB Vector Database Guide: Features, Python Demo",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/08/lancedb-vector-database/",
+        "summary": "LanceDB is a vector database that stores embeddings and enables similarity search across collections, addressing the limitations of large language models in handling scattered information.",
+        "why_it_matters": "This feature update matters because it provides a solution for modern AI systems to effectively manage and search complex data, enhancing their overall performance and capabilities."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "Sam Altman is still making the case for parenting via ChatGPT",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
+        "summary": "OpenAI's CEO Sam Altman shared a unique use case for ChatGPT, demonstrating its potential in parenting and education.",
+        "why_it_matters": "This industry news matters because it highlights the growing interest in AI applications for parenting and education, which could lead to new business opportunities and innovations in the field."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "YouTuber Hank Green says his AI usage is ‘not healthy’",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
+        "summary": "YouTuber Hank Green expressed concerns about his AI usage, stating that the level of dopamine he receives from interacting with LLMs is unhealthy for him and the world.",
+        "why_it_matters": "This societal discussion matters because it raises awareness about the potential risks and consequences of excessive AI usage, encouraging a more balanced and responsible approach to AI integration in daily life."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "YouTuber Hank Green says his AI usage is ‘not healthy’",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
+    "summary": "YouTuber Hank Green expressed concerns about his AI usage, stating that the level of dopamine he receives from interacting with LLMs is unhealthy for him and the world.",
+    "why_it_matters": "This story matters because it sparks a crucial conversation about the potential risks and consequences of excessive AI usage, highlighting the need for a more balanced and responsible approach to AI integration in daily life."
+  }
+}
