@@ -1,0 +1,102 @@
+{
+  "date": "2026-08-13",
+  "total_articles": 16,
+  "headline": "Anthropic's new watermarking system sparks controversy among Claude users, while AI pioneers debate open access and regulation",
+  "tldr": "Today's AI news highlights the ongoing debate around AI regulation and open access, with Anthropic's new watermarking system causing controversy among users. Meanwhile, AI pioneers like Geoffrey Hinton, Fei-Fei Li, and Andrew Ng make the case for staying open, and companies like Thrive Holdings raise significant funding to bring AI to the enterprise. Additionally, new AI models and features are being introduced, such as sign language AI and multimodal workflows, and researchers are exploring the potential of AI in various fields, including geospatial machine learning and document intelligence.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "Putting sign language AI into users’ hands",
+        "source": "Google DeepMind",
+        "link": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+        "summary": "Introducing sign-language-to-text (SL2T), a breakthrough model powering new sign language features for Deaf and hard of hearing users.",
+        "why_it_matters": "This innovation has the potential to improve the lives of millions of people worldwide who are Deaf or hard of hearing."
+      },
+      {
+        "title": "LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+        "summary": "A new model for edge vision capabilities",
+        "why_it_matters": "This model can enable faster and more efficient vision capabilities in edge devices, which is crucial for applications like autonomous vehicles and smart homes."
+      },
+      {
+        "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+        "source": "Hugging Face Blog",
+        "link": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+        "summary": "A new type of embedding for downstream analysis",
+        "why_it_matters": "These embeddings can be used for a variety of applications, including climate modeling and environmental monitoring."
+      }
+    ],
+    "research": [
+      {
+        "title": "Scaling AI agents with trustworthy data",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/",
+        "summary": "Business and technology leaders need to ensure that their AI agents are trained on trustworthy data to realize the desired return on investment",
+        "why_it_matters": "Trustworthy data is essential for the successful deployment of AI agents in various industries, including healthcare and finance."
+      },
+      {
+        "title": "Why You Shouldn’t Always Trust LLMs as Judges: Understanding Bias in Automated Evaluation",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/08/why-you-shouldnt-trust-llm-judges/",
+        "summary": "A discussion on the limitations of large language models as judges",
+        "why_it_matters": "This research highlights the potential biases in automated evaluation systems and the need for more nuanced approaches to assessment."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "Everything announced at Made by Google ’26: Pixel 11, Pixel Watch 5, Pixel Tag, and tons of Gemini features",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
+        "summary": "Google announces new Pixel devices and features, including a rival to Apple's AirTag",
+        "why_it_matters": "These updates demonstrate Google's commitment to innovation and its efforts to stay competitive in the tech industry."
+      },
+      {
+        "title": "Twitch content has trained Amazon AI for years, but users can opt out now",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
+        "summary": "Twitch users can now opt out of having their content used to train Amazon's AI models",
+        "why_it_matters": "This development highlights the importance of user consent and data privacy in the age of AI."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+        "summary": "Thrive Holdings raises $2 billion in funding to bring AI to the enterprise",
+        "why_it_matters": "This investment demonstrates the growing interest in AI adoption in the enterprise sector and the potential for AI to drive business growth."
+      },
+      {
+        "title": "NVIDIA CEO Tops Glassdoor’s 2026 List of Best CEOs",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/nvidia-life-glassdoor-best-ceo-2026/",
+        "summary": "NVIDIA CEO Jensen Huang is ranked as one of the best CEOs by Glassdoor",
+        "why_it_matters": "This recognition reflects the company's strong leadership and its commitment to innovation and employee satisfaction."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "Some Claude users are mad that Anthropic’s new watermarks will catch them using it at their jobs, classes",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
+        "summary": "Anthropic's new watermarking system sparks controversy among Claude users",
+        "why_it_matters": "This development raises questions about the ethics of AI use in academic and professional settings and the need for clear guidelines on AI adoption."
+      },
+      {
+        "title": "As AI safety concerns mount, three pioneers make the case for staying open",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
+        "summary": "AI pioneers debate the importance of open access and regulation in the face of growing safety concerns",
+        "why_it_matters": "This discussion highlights the need for a balanced approach to AI development, one that prioritizes both innovation and safety."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "As AI safety concerns mount, three pioneers make the case for staying open",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
+    "summary": "AI pioneers debate the importance of open access and regulation in the face of growing safety concerns",
+    "why_it_matters": "This discussion highlights the need for a balanced approach to AI development, one that prioritizes both innovation and safety."
+  }
+}
