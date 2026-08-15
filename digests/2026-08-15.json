@@ -1,0 +1,74 @@
+{
+  "date": "2026-08-15",
+  "total_articles": 8,
+  "headline": "OpenAI and Anthropic engage in a price war as Chinese AI rivals gain ground, while NVIDIA and Indonesian institutions launch the country's first university AI center",
+  "tldr": "Today's AI news highlights a price war between OpenAI and Anthropic, with Chinese AI rivals gaining ground. Meanwhile, NVIDIA and Indonesian institutions have launched the country's first university AI center to develop local AI talent. Additionally, there have been advancements in AI research, including the development of new models and techniques for improving AI performance. However, concerns about data storage and access have also been raised, with a PBS station fearing the loss of 50TB of data due to issues with its cloud storage provider.",
+  "categories": {
+    "new_models": [
+      {
+        "title": "NVIDIA Nemotron 3.5 Lightning: The AI Agent Workhorse",
+        "source": "Analytics Vidhya",
+        "link": "https://www.analyticsvidhya.com/blog/2026/08/nvidia-nemotron-3-5-lightning/",
+        "summary": "NVIDIA Nemotron 3.5 Lightning is an AI agent workhorse that can perform routine execution and difficult reasoning tasks, making it a valuable tool for AI development.",
+        "why_it_matters": "This new model has the potential to improve the efficiency and effectiveness of AI agents, making it a significant development in the field of AI research."
+      }
+    ],
+    "research": [
+      {
+        "title": "RAG Workflow and Loop Engineering: The Dispatcher That Decides When to Loop and When to Stop",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/rag-workflow-and-loop-engineering-the-dispatcher-that-decides-when-to-loop-and-when-to-stop/",
+        "summary": "This research presents a new approach to RAG workflow and loop engineering, which can improve the performance of AI agents by optimizing their decision-making processes.",
+        "why_it_matters": "This research has the potential to improve the efficiency and effectiveness of AI agents, making it a significant development in the field of AI research."
+      },
+      {
+        "title": "The Right 300 Tokens Beat 100k Noisy Ones: The Architecture of Context Engineering",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/presentations/architecture-context-engineering/",
+        "summary": "This presentation discusses the importance of context engineering in AI development, and presents practical fixes for common issues such as bloated context windows and stuffed prompts.",
+        "why_it_matters": "This research highlights the importance of context engineering in AI development, and provides valuable insights and solutions for improving AI performance."
+      }
+    ],
+    "features_updates": [
+      {
+        "title": "LLM-Generated GraphQL Mocks Arrive at Airbnb and Expedia, While the Spec Lags Behind",
+        "source": "InfoQ AI/ML",
+        "link": "https://www.infoq.com/news/2026/08/graphql-llm-mocking-spec/",
+        "summary": "Airbnb and Expedia have developed LLM-generated GraphQL mocks, which can improve the efficiency and effectiveness of their development processes.",
+        "why_it_matters": "This development highlights the growing use of AI in software development, and the potential for AI to improve the efficiency and effectiveness of development processes."
+      }
+    ],
+    "industry_business": [
+      {
+        "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
+        "summary": "OpenAI and Anthropic are engaging in a price war, with Chinese AI rivals gaining ground in the market.",
+        "why_it_matters": "This development highlights the growing competition in the AI market, and the potential for Chinese AI rivals to gain ground on established players."
+      },
+      {
+        "title": "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop Local AI Talent",
+        "source": "NVIDIA Blog",
+        "link": "https://blogs.nvidia.com/blog/ugm-indosat-nvidia-ai-technology-center/",
+        "summary": "NVIDIA and Indonesian institutions have launched the country's first university AI center, which will develop local AI talent and promote the use of AI in Indonesia.",
+        "why_it_matters": "This development highlights the growing importance of AI in Indonesia, and the potential for the country to become a major player in the global AI market."
+      }
+    ],
+    "policy_society": [
+      {
+        "title": "PBS station fears losing 50TB of data after being ghosted by cloud storage provider",
+        "source": "Ars Technica",
+        "link": "https://arstechnica.com/information-technology/2026/08/pbs-station-fears-losing-50tb-of-data-after-being-ghosted-by-cloud-storage-provider/",
+        "summary": "A PBS station is facing the potential loss of 50TB of data due to issues with its cloud storage provider, highlighting the importance of data storage and access in the digital age.",
+        "why_it_matters": "This development highlights the importance of data storage and access, and the potential risks and consequences of relying on cloud storage providers."
+      }
+    ]
+  },
+  "top_story": {
+    "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+    "source": "Ars Technica",
+    "link": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
+    "summary": "OpenAI and Anthropic are engaging in a price war, with Chinese AI rivals gaining ground in the market.",
+    "why_it_matters": "This development highlights the growing competition in the AI market, and the potential for Chinese AI rivals to gain ground on established players."
+  }
+}
