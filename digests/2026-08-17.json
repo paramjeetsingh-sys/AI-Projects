@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-17",
+  "total_articles": 2,
+  "headline": "Anthropic CEO addresses AI backlash as a crisis of trust, while researchers design a persistent knowledge layer for AI applications",
+  "tldr": "Today in AI, Anthropic's CEO discusses the need for trust in AI development, and a new design for a persistent knowledge layer is introduced, focusing on accumulating understanding without guessing. These developments highlight the ongoing efforts to improve AI trust and functionality. As AI continues to evolve, addressing trust and knowledge accumulation will be crucial for its successful integration into various industries.",
+  "categories": {
+    "new_models": [],
+    "research": [
+      {
+        "title": "Designing a Persistent Knowledge Layer That Refuses to Guess",
+        "source": "Towards Data Science",
+        "link": "https://towardsdatascience.com/designing-a-persistent-knowledge-layer-that-refuses-to-guess/",
+        "summary": "A vendor-neutral blueprint for applications that accumulate understanding, including a complete Azure-native implementation, is proposed to enhance AI knowledge accumulation without guessing.",
+        "why_it_matters": "This research matters because it contributes to the development of more reliable and trustworthy AI systems by focusing on knowledge accumulation and understanding, rather than guessing."
+      }
+    ],
+    "features_updates": [],
+    "industry_business": [
+      {
+        "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
+        "source": "TechCrunch AI",
+        "link": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
+        "summary": "Dario Amodei, Anthropic's CEO, addresses the AI backlash, emphasizing that it is fundamentally a crisis of trust, and pushes back against the notion that he has been overly pessimistic about AI.",
+        "why_it_matters": "This matters because it highlights the importance of trust in AI development and deployment, with industry leaders acknowledging the need to address concerns and build trust in AI systems."
+      }
+    ],
+    "policy_society": []
+  },
+  "top_story": {
+    "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
+    "summary": "Dario Amodei, Anthropic's CEO, addresses the AI backlash, emphasizing that it is fundamentally a crisis of trust, and pushes back against the notion that he has been overly pessimistic about AI.",
+    "why_it_matters": "This story is the top story because it involves a prominent AI company's CEO discussing a critical issue in the AI landscape, which is the crisis of trust, and how it impacts the development and perception of AI."
+  }
+}
