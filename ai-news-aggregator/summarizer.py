@@ -1,11 +1,12 @@
 import json
-from typing import List, Dict
+import os
 from datetime import datetime
+from typing import List, Dict
 
-from groq import Groq
+import requests
 
-client = Groq()  # reads GROQ_API_KEY from environment
-
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
+GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "llama-3.3-70b-versatile"
 
 SYSTEM_PROMPT = """You are an expert AI journalist and curator. Your job is to analyze a list of AI news articles and create a structured daily digest.
@@ -54,16 +55,24 @@ def summarize_news(articles: List[Dict]) -> Dict:
         return _empty_digest()
 
     today = datetime.now().strftime("%Y-%m-%d")
-    articles_text = build_articles_text(articles[:80])  # cap at 80 articles
+    articles_text = build_articles_text(articles[:80])
 
     print(f"Summarizing {min(len(articles), 80)} articles with {MODEL} via Groq...")
 
-    response = client.chat.completions.create(
-        model=MODEL,
-        max_tokens=8192,
-        temperature=0.3,
-        response_format={"type": "json_object"},  # guarantees valid JSON output
-        messages=[
+    if not GROQ_API_KEY:
+        print("[WARN] GROQ_API_KEY not set — using fallback digest.")
+        return _fallback_digest(articles, today)
+
+    headers = {
+        "Authorization": f"Bearer {GROQ_API_KEY}",
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "model": MODEL,
+        "max_tokens": 8192,
+        "temperature": 0.3,
+        "response_format": {"type": "json_object"},
+        "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
             {
                 "role": "user",
@@ -75,9 +84,16 @@ def summarize_news(articles: List[Dict]) -> Dict:
                 ),
             },
         ],
-    )
+    }
 
-    raw = response.choices[0].message.content
+    try:
+        resp = requests.post(GROQ_API_URL, headers=headers, json=payload, timeout=120)
+        resp.raise_for_status()
+        raw = resp.json()["choices"][0]["message"]["content"]
+    except Exception as e:
+        print(f"[WARN] Groq API call failed: {e}. Using fallback digest.")
+        return _fallback_digest(articles, today)
+
     try:
         digest = json.loads(raw)
         digest["total_articles"] = len(articles)
@@ -102,7 +118,10 @@ def _empty_digest() -> Dict:
 
 
 def _fallback_digest(articles: List[Dict], today: str) -> Dict:
-    cats = {"new_models": [], "research": [], "features_updates": [], "industry_business": [], "policy_society": []}
+    cats = {
+        "new_models": [], "research": [], "features_updates": [],
+        "industry_business": [], "policy_society": [],
+    }
     for a in articles[:20]:
         cats["features_updates"].append({
             "title": a["title"], "source": a["source"], "link": a["link"],
