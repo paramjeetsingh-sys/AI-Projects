@@ -45,6 +45,7 @@ jobs:
         run: pip install -r ai-news-aggregator/requirements.txt
 
       - name: Run AI News Digest
+        id: digest
         working-directory: ai-news-aggregator
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -62,7 +63,47 @@ jobs:
           if [ "${{ github.event.inputs.no_email }}" = "true" ]; then
             ARGS="$ARGS --no-email"
           fi
-          python main.py $ARGS
+          python main.py $ARGS 2>&1 | tee /tmp/digest_output.txt
+          echo "email_sent=$(grep -c '\[EMAIL\] Digest sent' /tmp/digest_output.txt || echo 0)" >> $GITHUB_OUTPUT
+          echo "email_to=${{ secrets.EMAIL_TO }}" >> $GITHUB_OUTPUT
+
+      - name: Write job summary
+        if: always()
+        run: |
+          EMAIL_TO="${{ secrets.EMAIL_TO }}"
+          if grep -q '\[EMAIL\] Digest sent' /tmp/digest_output.txt 2>/dev/null; then
+            STATUS="✅ Email sent to \`${EMAIL_TO}\`"
+          elif grep -q '\[EMAIL\] Skipped' /tmp/digest_output.txt 2>/dev/null; then
+            STATUS="⚠️ Email skipped — secrets not configured"
+          else
+            STATUS="ℹ️ Email not attempted (dry-run or --no-email)"
+          fi
+
+          echo "## AI Daily Digest — $(date -u +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Email:** ${STATUS}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ -z "${EMAIL_TO}" ]; then
+            echo "### Setup required to receive emails" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Go to **Settings → Secrets and variables → Actions → New repository secret** and add:" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "| Secret | Value |" >> $GITHUB_STEP_SUMMARY
+            echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| \`GROQ_API_KEY\` | Your Groq API key (free at console.groq.com) |" >> $GITHUB_STEP_SUMMARY
+            echo "| \`EMAIL_FROM\` | Your Gmail address |" >> $GITHUB_STEP_SUMMARY
+            echo "| \`EMAIL_PASSWORD\` | Gmail App Password (myaccount.google.com/apppasswords) |" >> $GITHUB_STEP_SUMMARY
+            echo "| \`EMAIL_TO\` | \`bishambarsingh333@gmail.com\` |" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "<details><summary>Full output</summary>" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat /tmp/digest_output.txt 2>/dev/null || echo "(no output)"
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "</details>" >> $GITHUB_STEP_SUMMARY
 
       - name: Commit daily digest to repository
         run: |
