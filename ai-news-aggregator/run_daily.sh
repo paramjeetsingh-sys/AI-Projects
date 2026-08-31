@@ -18,10 +18,11 @@ if [ -f "$SCRIPT_DIR/.env" ]; then
     set +a
 fi
 
-# Use virtualenv if it exists next to the project
-VENV="$SCRIPT_DIR/venv"
-if [ -d "$VENV" ]; then
-    PYTHON="$VENV/bin/python"
+# Use virtualenv if it exists next to the project (.venv preferred, venv as fallback)
+if [ -d "$SCRIPT_DIR/.venv" ]; then
+    PYTHON="$SCRIPT_DIR/.venv/bin/python"
+elif [ -d "$SCRIPT_DIR/venv" ]; then
+    PYTHON="$SCRIPT_DIR/venv/bin/python"
 else
     PYTHON="$(command -v python3)"
 fi
